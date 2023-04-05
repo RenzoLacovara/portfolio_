@@ -19,7 +19,7 @@ export default function Home() {
         <link rel="icon" href="/Images/icon.webp" />
       </Head>
       <Layout>
-        <h1>Hola!</h1>
+        <h1>Hola mundo!</h1>
       </Layout>
     </>
   );

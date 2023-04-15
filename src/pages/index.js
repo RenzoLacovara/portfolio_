@@ -1,9 +1,17 @@
 import Head from "next/head";
-import { Inter } from "next/font/google";
 import Layout from "@/components/Layout";
+import { Josefin_Sans } from "next/font/google";
+import { Caveat } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const josefin = Josefin_Sans({
+  subsets: ["latin"],
+  variable: "--font-josefin",
+});
 
+const caveat = Caveat({
+  subsets: ["latin"],
+  variable: "--font-caveat",
+});
 export default function Home() {
   return (
     <>
@@ -13,14 +21,16 @@ export default function Home() {
           name="description"
           content="If you are reading this: Hi! im Renzo, and this is my personal portfolio, hope you have a great day!"
         />
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta charSet="UTF-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/Images/icon.webp" />
       </Head>
-      <Layout>
-        <h1>Hola mundo!</h1>
-      </Layout>
+      <div
+        className={`${josefin.variable} ${caveat.variable} font-josefin h-full w-full`}
+      >
+        <Layout />
+      </div>
     </>
   );
 }

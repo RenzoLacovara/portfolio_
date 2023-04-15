@@ -1,10 +1,21 @@
-import NavBar from "@/components/Navbar";
+import Content from "../Content";
+import { useState, useEffect } from "react";
+import SideBar from "../Sidebar";
 
-export default function Layout({ children }) {
+export default function Layout() {
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   return (
-    <main className="container">
-      <NavBar />
-      <section>{children}</section>
-    </main>
+    mounted && (
+      <main
+        className={`grid grid-cols-[140px_1fr] grid-rows-[1fr 1fr 1fr] text-principal`}
+      >
+        <SideBar />
+        <Content />
+      </main>
+    )
   );
 }

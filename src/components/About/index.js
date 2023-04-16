@@ -1,114 +1,46 @@
 import React from "react";
-import { useEffect, useRef } from "react";
-import Image from "next/image";
-import yo from "../../../public/Images/2.webp";
-import Typed from "typed.js";
 
 const About = () => {
-  const el = useRef(null);
-  const typed = useRef(null);
-  useEffect(() => {
-    const options = {
-      strings: ["Developer", "Freelancer", "Designer", "Great guy"],
-      smartBackspace: true,
-      typeSpeed: 60,
-      backSpeed: 40,
-      loop: true,
-    };
-    typed.current = new Typed(el.current, options);
-    return () => {
-      typed.current.destroy();
-    };
-  }, []);
-  function reveal() {
-    var reveals = document.querySelectorAll(".reveal");
-    for (var i = 0; i < reveals.length; i++) {
-      var windowHeight = window.innerHeight;
-      var elementTop = reveals[i].getBoundingClientRect().top;
-      var elementVisible = 150;
-      if (elementTop < windowHeight - elementVisible) {
-        reveals[i].classList.add("active");
-      } else {
-        reveals[i].classList.remove("active");
-      }
-    }
-  }
-  window.addEventListener("scroll", reveal);
   return (
-    <div className="overflow-hidden">
-      <p class="animate-fadeLeft font-caveat text-detalled mt-8 md:ml-2 text-base">
-        &#60;html&#62;
+    <div class="animate-fadeBottom active my-8 opacity-0">
+      <p class="inline-block font-caveat text-detalled text-base md:ml-10">
+        &#60;h2&#62;
       </p>
-      <p class="animate-fadeLeft font-caveat text-detalled md:ml-6 text-base">
-        &#60;body&#62;
+      <h2 class="drop-shadow-subtitle inline-block ml-1">A little about me</h2>
+      <p class="inline-block font-caveat text-detalled text-base ml-1">
+        &#60;/h2&#62;
       </p>
-      <section class="flex flex-col sm:flex-row justify-center items-center">
-        <div class="animate-fadeLeft pt-8" id="sobremi">
-          <p class="inline-block font-caveat text-detalled absolute md:ml-10 text-base">
-            &#60;h1&#62;
-          </p>
-          <h1 class="namee inline-block stroke-secundariod pl-8 text-5xl lg:text-7xl md:pl-[4.5rem]">
-            <span className="drop-shadow-title">
-              Hi!
-              <br />
-              I'm Renzo!
-            </span>
-            <span class="font-caveat text-detalled pl-2 text-base">
-              &#60;/h1&#62;
-            </span>
-          </h1>
-          <br />
-          <p class="inline-block font-caveat text-detalled text-base md:ml-14 ">
-            &#60;p&#62;
-          </p>
-          <h3 class="inline-block text-detalled mt-2 text-2xl lg:text-4xl">
-            <span className="text-principal pl-2">I'm a </span>
-            <span ref={el}></span>
-          </h3>
-          <p class="inline-block font-caveat text-detalled text-base">
-            &#60;/p&#62;
-          </p>
-        </div>
-        <div class="relative h-72 w-10/12 max-w-80 mt-5 animate-fadeRight rounded-t-0 rounded-b-[55px] overflow-hidden transition-all ease-custom duration-700 shadow-card sm:mx-6 sm:h-72 small:w-80 sm:mt-0">
-          <div class="bg-clouds bg-cover h-48 w-full rounded-[55px] absolute top-24 animate-bgmove sm:h-64 sm:top-16">
-            <Image
-              class="pointer-events-none relative animate-imagen origin-[50%_bottom] translate-y-0 scale-125 top-[-1rem] w-48 left-1 sm:top-[-2rem] sm:w-56 sm:left-2"
-              src={yo}
-            />
-            <div class="opacity-0 flex bg-white p-2 rounded-[30px] min-w-[40px] max-w-[120px] min-h-[60px] absolute m-5 items-center justify-center text-center text-secundario text-base animate-float shadow-card top-[-5.2rem] right-[-.5rem] after:content-[''] after:bg-white after:block after:rounded-full after:absolute after:z-[-1] after:bottom-[-10px] after:right-6 after:w-8 after:h-8 after:shadow-[33px_-25px_0_0_#fff,_-30px_-4px_0_-2px_#fff,_-47px_5px_0_-6px_#fff,_-55px_12px_0_-10px_#fff,_-64px_19px_0_-12px_#fff] before:content-[''] before:bg-white before:block before:rounded-full before:absolute before:z-[-1] before:w-11 before:h-11 before:top-[-12px] before:left-7 before:shadow-[-50px_20px_0_-12px_#fff] sm:right-[-10px] sm:top-[-3.2rem]">
-              I need coffee...
-            </div>
-          </div>
-        </div>
-      </section>
-      <div class="container_sobremi fade-bottom2 active">
-        <p class="tag tag3 inli">&#60;h2&#62;</p>
-        <h2 class="inli intro">
-          <span class="intro">A little about me</span>
-        </h2>
-        <p class="tag inli">&#60;/h2&#62;</p>
-        <p class="tag3 tag">&#60;p&#62;</p>
-        <p class="sobremi_p">
-          I am a self-taught programmer, always curious and willing to learn,
-          currently focused mainly on the development of web pages and apps
-          prioritizing accessibility, good practices, responsive design and a
-          lot of attention to every detail. Will not have have to settle for
-          basic solutions and empty templates. I guarantee completely customized
-          and attractive designs for your ideas. Your page will be the first
-          impression of your customers, let's make it a good one!{" "}
+      <p class="block font-caveat text-detalled text-base md:ml-10">
+        &#60;p&#62;
+      </p>
+      <p class="text-sm mx-3 text-center md:text-xl md:mx-20 small:text-left">
+        I am a self-taught programmer, always curious and willing to learn,
+        currently focused mainly on the development of web pages and apps
+        prioritizing accessibility, good practices, responsive design and a lot
+        of attention to every detail. Will not have have to settle for basic
+        solutions and empty templates. I guarantee completely customized and
+        attractive designs for your ideas. Your page will be the first
+        impression of your customers, let's make it a good one!{" "}
+      </p>
+      <p class="block font-caveat text-detalled text-base md:ml-10">
+        &#60;/p&#62;
+      </p>
+      <div className="text-center small:text-left">
+        <p class="inline-block font-caveat text-detalled text-base md:ml-10 ">
+          &#60;a&#62;
         </p>
-        <p class="tag tag3">&#60;/p&#62;</p>
-        <p class="tag tag3 inli">&#60;a&#62;</p>
         <a
           href="/Images/certificados/CV_Renzo_Lacovara.pdf"
           download="RenzoLacovaraCV"
-          class="link_cv"
+          className="text-base mx-3 py-2 px-4 rounded-[50px] bg-secundariod hover:text-detalled "
           target="_blank"
           rel="noopener noreferrer"
         >
           My Resume
         </a>
-        <p class="tag inli">&#60;/a&#62;</p>
+        <p class="inline-block font-caveat text-detalled text-base">
+          &#60;/a&#62;
+        </p>
       </div>
     </div>
   );

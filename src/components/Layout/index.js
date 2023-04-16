@@ -11,7 +11,7 @@ export default function Layout() {
   return (
     mounted && (
       <main
-        className={`grid grid-cols-[140px_1fr] grid-rows-[1fr 1fr 1fr] text-principal`}
+        className={`grid grid-cols-[44px_1fr] md:grid-cols-[140px_1fr] grid-rows-[1fr 1fr 1fr] text-principal`}
       >
         <SideBar />
         <Content />

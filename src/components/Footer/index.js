@@ -4,7 +4,7 @@ import { FaLinkedinIn, FaGithub, FaEnvelope } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="bg-secundariod row-start-3 row-end-4 h-1/3">
-      <p className="text-center p-5 text-xs">
+      <p className="opacity-0 md:opacity-100 text-center p-5 text-xs">
         <i>
           Handcrafted <br />
           by Me

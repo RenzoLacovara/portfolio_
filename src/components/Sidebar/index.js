@@ -4,7 +4,7 @@ import Footer from "../Footer";
 
 const SideBar = () => {
   return (
-    <div className="h-screen w-[140px] col-span-2 fixed bg-black">
+    <div className="h-screen w-11 md:w-[140px] col-span-2 fixed ">
       <Navbar />
       <Footer />
     </div>

@@ -3,7 +3,7 @@ import React from "react";
 const Logo = () => {
   return (
     <div className="flex flex-col justify-center items-center gap-1 h-1/2">
-      <a class="logo" name="inicio">
+      <a class="logo hidden md:inline-block" name="inicio">
         <svg
           width="120"
           height="120"
@@ -75,7 +75,14 @@ const Logo = () => {
           </defs>
         </svg>
       </a>
-      <p className="text-xs">&#60;Front-End Dev/&#62;</p>
+      <p className="text-xl md:text-xs text-detalled">
+        &#60;
+        <span className="hidden md:inline-block text-principal">
+          Front-End Dev
+        </span>
+        <span className="text-principal text-base md:text-xs">/</span>
+        &#62;
+      </p>
     </div>
   );
 };

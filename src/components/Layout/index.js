@@ -4,6 +4,7 @@ import SideBar from "../Sidebar";
 
 export default function Layout() {
   const [mounted, setMounted] = useState(false);
+
   useEffect(() => {
     setMounted(true);
   }, []);
@@ -11,7 +12,8 @@ export default function Layout() {
   return (
     mounted && (
       <main
-        className={`grid grid-cols-[44px_1fr] md:grid-cols-[140px_1fr] grid-rows-[1fr 1fr 1fr] bg-secundario  text-principal bg-dots bg-contain bg-repeat`}
+        id="main"
+        className={`grid grid-cols-[auto_1fr] grid-rows-[1fr 1fr 1fr] bg-secundario text-principal bg-dots bg-contain bg-repeat`}
       >
         <SideBar />
         <Content />

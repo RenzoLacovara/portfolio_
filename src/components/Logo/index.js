@@ -1,9 +1,14 @@
 import React from "react";
 
-const Logo = () => {
+const Logo = ({ hovered }) => {
   return (
     <div className="flex flex-col justify-center items-center gap-1 h-1/2">
-      <a class="logo hidden md:inline-block" name="inicio">
+      <div
+        class={`logo ${
+          hovered ? "opacity-100 delay-500" : "opacity-0 duration-0 "
+        } transition-all duration-300 ease-in-out `}
+        name="inicio"
+      >
         <svg
           width="120"
           height="120"
@@ -12,7 +17,7 @@ const Logo = () => {
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink"
           id="logo"
-          className="hover:animate-shake invert-[97%]"
+          className="hover:animate-shake invert-[97%] w-20 md:w-[120px]"
         >
           <g id="logo">
             <rect width="159" height="155" fill="none" />
@@ -74,13 +79,23 @@ const Logo = () => {
             />
           </defs>
         </svg>
-      </a>
-      <p className="text-xl md:text-xs text-detalled">
+      </div>
+      <p
+        className={`${
+          hovered
+            ? "md:text-xs text-[.6rem] duration-200"
+            : "text-xl pb-20 duration-300"
+        }  text-detalled transition-all ease-in-out`}
+      >
         &#60;
-        <span className="hidden md:inline-block text-principal">
+        <span
+          className={`${hovered ? "inline-block" : "hidden"} text-principal`}
+        >
           Front-End Dev
         </span>
-        <span className="text-principal text-base md:text-xs">/</span>
+        <span className={`text-principal ${hovered ? "text-xs" : "text-base"}`}>
+          /
+        </span>
         &#62;
       </p>
     </div>

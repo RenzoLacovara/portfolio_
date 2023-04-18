@@ -3,14 +3,22 @@ module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     screens: {
-      small: "475px",
-      sm: "640px",
-      md: "768px",
-      lg: "1024px",
-      xl: "1280px",
-      xxl: "1536px",
+      small: "29rem",
+      sm: "40rem",
+      md: "48rem",
+      lg: "64rem",
+      xl: "80rem",
+      xxl: "96rem",
     },
     extend: {
+      fontSize: {
+        "fluid-1": "clamp(1.89rem, calc(1.48rem + 2.03vw), 2.93rem)",
+        "fluid-2": "clamp(3.27rem, calc(2.31rem + 4.79vw), 5.72rem)",
+      },
+      spacing: {
+        "fluid-1": "clamp(1.31rem, calc(0.65rem + 3.29vw), 3.00rem)",
+        "fluid-2": "clamp(1.31rem, calc(0.07rem + 6.22vw), 4.50rem)",
+      },
       animation: {
         shake: "shake .4s ease-in-out",
         bgmove: "bgmove 30s linear infinite",
@@ -59,10 +67,6 @@ module.exports = {
           },
         },
         float: {
-          "0%, 100%": {
-            transform: "translatey(0px)",
-            opacity: 1,
-          },
           "50%": {
             transform: "translatey(-20px)",
             opacity: 1,

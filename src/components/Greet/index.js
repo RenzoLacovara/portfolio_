@@ -75,7 +75,7 @@ const Greet = () => {
               class="pointer-events-none relative animate-imagen origin-[50%_bottom] translate-y-0 scale-125 top-[-1rem] w-48 left-1 sm:top-[-2rem] sm:w-56 sm:left-2"
               src={yo}
             />
-            <div class="flex opacity-0 bg-white p-2 rounded-[30px] min-w-[40px] max-w-[120px] min-h-[60px] absolute m-5 items-center justify-center text-center text-secundario text-base animate-float shadow-card top-[-5.2rem] right-[-.5rem] after:content-[''] after:bg-white after:block after:rounded-full after:absolute after:z-[-1] after:bottom-[-10px] after:right-6 after:w-8 after:h-8 after:shadow-[33px_-25px_0_0_#fff,_-30px_-4px_0_-2px_#fff,_-47px_5px_0_-6px_#fff,_-55px_12px_0_-10px_#fff,_-64px_19px_0_-12px_#fff] before:content-[''] before:bg-white before:block before:rounded-full before:absolute before:z-[-1] before:w-11 before:h-11 before:top-[-12px] before:left-7 before:shadow-[-50px_20px_0_-12px_#fff] sm:right-[-10px] sm:top-[-3.2rem]">
+            <div class="flex opacity-0 bg-white p-2 rounded-[30px] min-w-[40px] max-w-[120px] min-h-[60px] absolute m-5 items-center justify-center text-center text-secundario text-base animate-float shadow-card top-[-5.2rem] right-[-.5rem] after:content-[''] after:bg-white after:block after:rounded-full after:absolute after:z-[-1] after:bottom-[-10px] after:right-6 after:w-8 after:h-8 after:shadow-[33px_-25px_0_0_#fff,_-45px_-2px_0_-2px_#fff] before:content-[''] before:bg-white before:block before:rounded-full before:absolute before:z-[-1] before:w-11 before:h-11 before:top-[-12px] before:left-7 before:shadow-[-50px_20px_0_-12px_#fff] sm:right-[-10px] sm:top-[-3.2rem]">
               I need coffee...
             </div>
           </div>

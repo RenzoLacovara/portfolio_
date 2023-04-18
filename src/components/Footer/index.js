@@ -1,14 +1,29 @@
 import React from "react";
 import { FaLinkedinIn, FaGithub, FaEnvelope } from "react-icons/fa";
 
-const Footer = () => {
+const Footer = ({ hovered }) => {
   return (
-    <footer className="bg-secundariod row-start-3 row-end-4 h-1/3">
-      <p className="opacity-0 md:opacity-100 text-center p-5 text-xs">
-        <i>
-          Handcrafted <br />
-          by Me
-        </i>
+    <footer
+      className={`bg-secundariod row-start-3 row-end-4 h-1/3 fixed mt-[66vh] ${
+        hovered ? "md:w-[130px] w-24" : "w-11"
+      } transition-all duration-500 ease-custom overflow-hidden`}
+    >
+      <p
+        className={` ${
+          hovered ? "opacity-100 delay-500" : "opacity-0"
+        } text-center md:p-5 py-5 text-xs transition-all duration-300 ease-in-out  `}
+      >
+        {hovered ? (
+          <i>
+            Handcrafted <br />
+            by Me
+          </i>
+        ) : (
+          <i>
+            Hello <br />
+            there
+          </i>
+        )}
       </p>
       <div>
         <ul className="flex flex-col items-center justify-center gap-1">

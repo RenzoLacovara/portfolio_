@@ -1,13 +1,14 @@
 import React from "react";
+import { useResponsive } from "../../hooks/useResponsive";
 
-const Logo = ({ hovered }) => {
+const Logo = () => {
+  const { responsive } = useResponsive();
   return (
     <div className="flex flex-col justify-center items-center gap-1 h-1/2">
       <div
-        class={`logo ${
-          hovered ? "opacity-100 delay-500" : "opacity-0 duration-0 "
+        className={`logo ${
+          responsive ? "opacity-100 delay-500" : "opacity-0 duration-0 "
         } transition-all duration-300 ease-in-out `}
-        name="inicio"
       >
         <svg
           width="120"
@@ -82,18 +83,20 @@ const Logo = ({ hovered }) => {
       </div>
       <p
         className={`${
-          hovered
+          responsive
             ? "md:text-xs text-[.6rem] duration-200"
             : "text-xl pb-20 duration-300"
         }  text-detalled transition-all ease-in-out`}
       >
         &#60;
         <span
-          className={`${hovered ? "inline-block" : "hidden"} text-principal`}
+          className={`${responsive ? "inline-block" : "hidden"} text-principal`}
         >
           Front-End Dev
         </span>
-        <span className={`text-principal ${hovered ? "text-xs" : "text-base"}`}>
+        <span
+          className={`text-principal ${responsive ? "text-xs" : "text-base"}`}
+        >
           /
         </span>
         &#62;

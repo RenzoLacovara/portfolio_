@@ -1,19 +1,22 @@
 import React from "react";
 import { FaLinkedinIn, FaGithub, FaEnvelope } from "react-icons/fa";
+import { useResponsive } from "../../hooks/useResponsive";
 
-const Footer = ({ hovered }) => {
+const Footer = () => {
+  const { responsive } = useResponsive();
+
   return (
     <footer
       className={`bg-secundariod row-start-3 row-end-4 h-1/3 fixed mt-[66vh] ${
-        hovered ? "md:w-[130px] w-24" : "w-11"
-      } transition-all duration-500 ease-custom overflow-hidden`}
+        responsive ? "md:w-[130px] w-24" : "w-11"
+      } transition-all duration-500 ease-custom overflow-hidden h-full`}
     >
       <p
         className={` ${
-          hovered ? "opacity-100 delay-500" : "opacity-0"
+          responsive ? "opacity-100 delay-500" : "opacity-0"
         } text-center md:p-5 py-5 text-xs transition-all duration-300 ease-in-out  `}
       >
-        {hovered ? (
+        {responsive ? (
           <i>
             Handcrafted <br />
             by Me

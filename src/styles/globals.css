@@ -9,3 +9,5 @@
 .logo > svg:hover #yo2 {
   opacity: 1;
 }
+/* background: rgb(255,154,162);
+background: linear-gradient(90deg, rgba(255,154,162,1) 0%, rgba(255,183,178,1) 20%, rgba(255,218,193,1) 40%, rgba(248,255,165,1) 60%, rgba(182,251,156,1) 80%, rgba(151,239,255,1) 100%); */

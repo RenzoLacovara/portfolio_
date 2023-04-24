@@ -1,7 +1,8 @@
-import Head from "next/head";
-import Layout from "@/components/Layout";
+import dynamic from "next/dynamic";
+
 import { Josefin_Sans } from "next/font/google";
 import { Caveat } from "next/font/google";
+import Head from "next/head";
 
 const josefin = Josefin_Sans({
   subsets: ["latin"],
@@ -13,6 +14,7 @@ const caveat = Caveat({
   variable: "--font-caveat",
 });
 export default function Home() {
+  const Layout = dynamic(() => import("../components/Layout"));
   return (
     <>
       <Head>
@@ -26,8 +28,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/Images/icon.webp" />
       </Head>
+
       <div
-        className={`${josefin.variable} ${caveat.variable} font-josefin h-full w-full`}
+        className={`${josefin.variable} ${caveat.variable} font-josefin h-full w-full `}
       >
         <Layout />
       </div>

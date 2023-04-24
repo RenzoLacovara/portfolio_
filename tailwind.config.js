@@ -22,14 +22,15 @@ module.exports = {
       animation: {
         shake: "shake .4s ease-in-out",
         bgmove: "bgmove 30s linear infinite",
-        imagen: "imagen 2s cubic-bezier(0.68, -0.55, 0.265, 1.55)",
+        imagen: "imagen 2.7s cubic-bezier(0.68, -0.55, 0.265, 1.55)",
         float:
-          "float 5s ease-in-out infinite 2s, Opacity 1s ease-in-out forwards 2s",
-        fadeLeft: "fadeLeft 1s cubic-bezier(0.68, -0.55, 0.265, 1.55)",
-        fadeRight: "fadeRight 1.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);",
+          "float 5.5s ease-in-out infinite 2s, Opacity 1s ease-in-out forwards 2s",
+        fadeLeft: "fadeLeft 1.7s cubic-bezier(0.68, -0.55, 0.265, 1.55)",
+        fadeRight: "fadeRight 2.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);",
+        fadeLeftFast: "fadeLeft 1.5s ease-in-out",
         fadeBottom:
           "fadeBottom 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2s forwards",
-        intro: "intro 2s ease forwards",
+        intro: "intro 2.3s ease forwards",
       },
       colors: {
         principal: "#edf2f4",

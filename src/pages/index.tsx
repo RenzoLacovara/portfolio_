@@ -1,20 +1,20 @@
-import dynamic from "next/dynamic";
+import dynamic from 'next/dynamic'
 
-import { Josefin_Sans } from "next/font/google";
-import { Caveat } from "next/font/google";
-import Head from "next/head";
+import { Josefin_Sans } from 'next/font/google'
+import { Caveat } from 'next/font/google'
+import Head from 'next/head'
 
 const josefin = Josefin_Sans({
-  subsets: ["latin"],
-  variable: "--font-josefin",
-});
+  subsets: ['latin'],
+  variable: '--font-josefin',
+})
 
 const caveat = Caveat({
-  subsets: ["latin"],
-  variable: "--font-caveat",
-});
+  subsets: ['latin'],
+  variable: '--font-caveat',
+})
 export default function Home() {
-  const Layout = dynamic(() => import("../components/Layout"));
+  const Layout = dynamic(() => import('../components/Layout'))
   return (
     <>
       <Head>
@@ -30,10 +30,10 @@ export default function Home() {
       </Head>
 
       <div
-        className={`${josefin.variable} ${caveat.variable} font-josefin h-full w-full `}
+        className={`${josefin.variable} ${caveat.variable} font-josefin h-full w-full`}
       >
         <Layout />
       </div>
     </>
-  );
+  )
 }

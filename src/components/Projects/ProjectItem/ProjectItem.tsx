@@ -1,7 +1,6 @@
 import React from 'react'
-import { useRender } from '../../../hooks/useRender'
-import { MdViewComfy } from 'react-icons/md'
 import { FaGithub } from 'react-icons/fa'
+import { TfiWorld } from 'react-icons/tfi'
 
 type Props<C extends React.ElementType> = {
   proyectos: {
@@ -21,9 +20,9 @@ export default function ProjectItem<C extends React.ElementType>({
   ...rest
 }: Props<C>) {
   return (
-    <div className="w-[95%] m-auto flex flex-col gap-10">
+    <div className="w-[95%] m-auto flex flex-col gap-10 ">
       {proyectos.map((proyecto) => (
-        <div className="project flex">
+        <div className="project flex even:flex-row-reverse">
           <div className="md:w-2/4 grid place-items-center relative z-[1]">
             <div
               key={proyecto.titulo}
@@ -50,7 +49,7 @@ export default function ProjectItem<C extends React.ElementType>({
             <div className="flex">
               <a href={proyecto.link} className="flex">
                 Site
-                <MdViewComfy />
+                <TfiWorld />
               </a>
               <a href={proyecto.linkRepo} className="flex">
                 Repo

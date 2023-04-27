@@ -23,7 +23,7 @@ module.exports = {
       animation: {
         shake: 'shake .4s ease-in-out',
         bgmove: 'bgmove 30s linear infinite',
-        imagen: 'imagen 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2s',
+        imagen: 'imagen 1.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2s',
         float: 'float 4s ease-in-out infinite',
         fadeLeft:
           'fadeLeft 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) .5s forwards',

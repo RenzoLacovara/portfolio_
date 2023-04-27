@@ -42,6 +42,14 @@ background: linear-gradient(90deg, rgba(255,154,162,1) 0%, rgba(255,183,178,1) 2
   perspective: 1000px;
 }
 
+.project:nth-child(even) .projectimg {
+  transform: rotateX(0deg) rotateY(-30deg) rotateZ(0deg);
+  transition: 0.3s;
+  -webkit-transform: rotateX(0deg) rotateY(-30deg) rotateZ(0deg);
+  -moz-transform: rotateX(0deg) rotateY(-30deg) rotateZ(0deg);
+  -ms-transform: rotateX(0deg) rotateY(-30deg) rotateZ(0deg);
+  -o-transform: rotateX(0deg) rotateY(-30deg) rotateZ(0deg);
+}
 .projectimg {
   transform: rotateX(0deg) rotateY(30deg) rotateZ(0deg);
   transition: 0.3s;
@@ -57,4 +65,10 @@ background: linear-gradient(90deg, rgba(255,154,162,1) 0%, rgba(255,183,178,1) 2
 .project:hover .projectdiv::after {
   left: 0;
   width: 30rem;
+}
+.project:nth-child(even) .projectdiv::after {
+  left: 45px;
+}
+.project:nth-child(even):hover .projectdiv::after {
+  left: 0;
 }

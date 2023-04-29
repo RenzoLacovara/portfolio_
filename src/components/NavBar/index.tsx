@@ -1,27 +1,27 @@
-import Logo from "../Logo";
-import { BsStack, BsFillChatQuoteFill } from "react-icons/bs";
-import { IoMdContact } from "react-icons/io";
-import { HiBriefcase } from "react-icons/hi";
-import { IoSchool } from "react-icons/io5";
-import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
-import { useResponsive } from "../../hooks/useResponsive";
+import Logo from '../Logo'
+import { BsStack, BsFillChatQuoteFill } from 'react-icons/bs'
+import { BsBriefcaseFill } from 'react-icons/bs'
+import { IoSchool } from 'react-icons/io5'
+import { MdOutlineKeyboardDoubleArrowRight } from 'react-icons/md'
+import { SiAboutdotme } from 'react-icons/si'
+import { useResponsive } from '../../hooks/useResponsive'
 
 const Navbar = () => {
-  const { responsive, setResponsive } = useResponsive();
+  const { responsive, setResponsive } = useResponsive()
   const handleClick: React.MouseEventHandler<HTMLButtonElement> = (
     e: React.MouseEvent<HTMLButtonElement>
   ) => {
-    setResponsive(!responsive);
-  };
+    setResponsive(!responsive)
+  }
   return (
     <header
       className={`fixed row-start-1 row-end-3 bg-secundariod h-2/3 ${
-        responsive ? "md:w-[130px] w-24" : "w-11"
+        responsive ? 'md:w-[130px] w-24' : 'w-11'
       } transition-all duration-500 ease-custom overflow-hidden`}
     >
       <button
         className={`absolute top-2 left-[50%] translate-x-[-50%]  text-white text-xl z-20 ${
-          responsive ? "rotate-180" : "rotate-0"
+          responsive ? 'rotate-180' : 'rotate-0'
         } transition-all duration-500 ease-custom`}
         onClick={handleClick}
       >
@@ -32,21 +32,21 @@ const Navbar = () => {
         <div className="h-1/2">
           <ul
             className={`flex flex-col items-center justify-center ${
-              responsive ? "gap-4" : "gap-3"
+              responsive ? 'gap-4' : 'gap-3'
             } h-full text-sm md:text-[.9rem]`}
           >
             <li>
               <a id="link1" href="#sobremi">
                 <span
                   className={`${
-                    responsive ? "inline-block" : "hidden"
+                    responsive ? 'inline-block' : 'hidden'
                   } hover:text-detalled`}
                 >
                   ABOUT ME
                 </span>
-                <BsFillChatQuoteFill
+                <SiAboutdotme
                   className={`hover:text-detalled ${
-                    responsive ? "hidden" : "inline-block"
+                    responsive ? 'hidden' : 'inline-block'
                   } text-2xl`}
                 />
               </a>
@@ -55,14 +55,14 @@ const Navbar = () => {
               <a id="link2" href="#proyectos">
                 <span
                   className={`${
-                    responsive ? "inline-block" : "hidden"
+                    responsive ? 'inline-block' : 'hidden'
                   } hover:text-detalled`}
                 >
                   PROJECTS
                 </span>
-                <HiBriefcase
+                <BsBriefcaseFill
                   className={`hover:text-detalled ${
-                    responsive ? "hidden" : "inline-block"
+                    responsive ? 'hidden' : 'inline-block'
                   } text-2xl`}
                 />
               </a>
@@ -71,14 +71,14 @@ const Navbar = () => {
               <a id="link3" href="#certificados">
                 <span
                   className={`${
-                    responsive ? "inline-block" : "hidden"
+                    responsive ? 'inline-block' : 'hidden'
                   } hover:text-detalled`}
                 >
                   EDUCATION
                 </span>
                 <IoSchool
                   className={`hover:text-detalled ${
-                    responsive ? "hidden" : "inline-block"
+                    responsive ? 'hidden' : 'inline-block'
                   } text-2xl`}
                 />
               </a>
@@ -87,14 +87,14 @@ const Navbar = () => {
               <a id="link4" href="#tools">
                 <span
                   className={`${
-                    responsive ? "inline-block" : "hidden"
+                    responsive ? 'inline-block' : 'hidden'
                   } hover:text-detalled`}
                 >
                   STACK
                 </span>
                 <BsStack
                   className={`hover:text-detalled ${
-                    responsive ? "hidden" : "inline-block"
+                    responsive ? 'hidden' : 'inline-block'
                   } text-2xl`}
                 />
               </a>
@@ -103,14 +103,14 @@ const Navbar = () => {
               <a id="link5" href="#contacto">
                 <span
                   className={`${
-                    responsive ? "inline-block" : "hidden"
+                    responsive ? 'inline-block' : 'hidden'
                   } hover:text-detalled`}
                 >
                   CONTACT
                 </span>
-                <IoMdContact
+                <BsFillChatQuoteFill
                   className={`hover:text-detalled ${
-                    responsive ? "hidden" : "inline-block"
+                    responsive ? 'hidden' : 'inline-block'
                   } text-2xl`}
                 />
               </a>
@@ -119,7 +119,7 @@ const Navbar = () => {
         </div>
       </nav>
     </header>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

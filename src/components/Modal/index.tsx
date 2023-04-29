@@ -1,23 +1,12 @@
-import React, { ReactNode, useEffect, useRef } from "react";
-import { createPortal } from "react-dom";
-type ModalProps = {
-  children: ReactNode;
-  id: string;
-};
+import Image from 'next/image'
+import React, { useState } from 'react'
+import About from '../About'
+type Props<C extends React.ElementType> = {
+  imgUrl: string
+  as?: C
+} & React.ComponentPropsWithoutRef<C>
 
-export default function Modal({ children, id }: ModalProps) {
-  const modalRoot = document.querySelector(`#${id}`) as HTMLElement;
-  modalRoot.style.position = "relative";
-
-  const elRef = useRef<HTMLDivElement | null>(null);
-  if (!elRef.current) elRef.current = document.createElement("div");
-
-  useEffect(() => {
-    const el = elRef.current;
-    modalRoot.appendChild(el);
-    return () => {
-      modalRoot.removeChild(el);
-    };
-  }, []);
-  return createPortal(<div>{children}</div>, elRef.current);
+export default function Modal({ isOpen, onClose, src }) {
+  console.log(src)
+  return <>{isOpen && <About />}</>
 }

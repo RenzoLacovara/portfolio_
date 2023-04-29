@@ -23,17 +23,26 @@ module.exports = {
       animation: {
         shake: 'shake .4s ease-in-out',
         bgmove: 'bgmove 30s linear infinite',
-        imagen: 'imagen 1.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2s',
+        imagen:
+          'imagen 1.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2s forwards',
         float: 'float 4s ease-in-out infinite',
         fadeLeft:
-          'fadeLeft 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) .5s forwards',
+          'fadeLeft 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1.5s forwards',
+        fadeLeft2:
+          'fadeLeft 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards',
         fadeRight:
           'fadeRight 2.2s cubic-bezier(0.68, -0.55, 0.265, 1.55) .7s forwards ;',
-        fadeLeftFast: 'fadeLeft 1s ease-in-out',
+        fadeRight2:
+          'fadeRight 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards ;',
+        fadeLeftFast: 'fadeLeft 1s ease-in-out .5s forwards',
         fadeBottom:
           'fadeBottom 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3s forwards',
         intro: 'intro 4.5s ease forwards',
         opacity: 'Opacity 1s ease-in-out forwards 4s',
+        opacityFast: 'Opacity 1s ease-in-out forwards 1s',
+        scroll: 'scroll 40s linear infinite',
+        orbit: 'orbit linear 40s infinite',
+        orbitReverse: 'orbit linear 40s infinite reverse',
       },
       colors: {
         principal: '#edf2f4',
@@ -65,9 +74,12 @@ module.exports = {
           '0%, 50%': {
             transform: 'translateY(20px) scale(1.15)',
             'transform-origin': '50% bottom',
+            left: '0',
           },
           '80%': {
             transform: 'translateY(0) scale(1.25)',
+            left: '2rem',
+            top: '-8.3rem',
           },
         },
         float: {
@@ -133,10 +145,25 @@ module.exports = {
             'text-shadow': ['3px 3px 0px #e28868, 6px 6px 0px #121212'],
           },
         },
+        scroll: {
+          '0%': {
+            transform: 'translateX(0)',
+          },
+          '100%': {
+            transform: 'translateX(calc(-318px * 9))',
+          },
+        },
+        orbit: {
+          to: {
+            transform:
+              'rotateZ(calc((360deg / var(--circle-item-count)) * (var(--circle-item-index) + var(--circle-item-count)))) translateY(calc(var(--orbit-radius) * -1)) rotateZ(calc((360deg / var(--circle-item-count)) * (var(--circle-item-index) + var(--circle-item-count)) * -1))',
+          },
+        },
       },
       dropShadow: {
         title: ['3px 3px 0px #e28868', '6px 6px 0px #121212'],
         subtitle: '6px 5px 0px #121212',
+        subtitleLight: '6px 5px 0px #E54D26',
       },
       boxShadow: {
         card: [
@@ -153,6 +180,10 @@ module.exports = {
       backgroundImage: {
         clouds: 'url(../../public/images/Cloudy.svg)',
         dots: 'url(../../public/images/dots.svg)',
+        waves: 'url(../../public/images/wave.svg)',
+        waveup: 'url(../../public/images/wave1.svg)',
+        wavedown: 'url(../../public/images/wave2.svg)',
+        peak: 'url(../../public/images/peak.svg)',
       },
     },
   },

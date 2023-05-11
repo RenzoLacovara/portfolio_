@@ -43,10 +43,10 @@ export default function Certification() {
           <a
             href="https://www.linkedin.com/in/renlacovara/details/certifications/"
             target="_blank"
-            className="enlace flex justify-center items-center w-36 relative text-base mx-3 py-2 px-4 rounded-[50px] bg-principal text-[#E54D26] overflow-hidden after:w-0 after:h-full after:content-[' '] after:bg-detalled after:transition-all after:duration-[.4s] after:ease-in-out after:right-0 after:absolute  after:hover:right-auto after:hover:left-0 after:hover:w-full"
+            className="group flex justify-center items-center w-36 relative text-base mx-3 py-2 px-4 rounded-[50px] bg-principal text-[#E54D26] overflow-hidden after:w-0 after:h-full after:content-[' '] after:bg-detalled after:transition-all after:duration-[.4s] after:ease-in-out after:right-0 after:absolute  after:hover:right-auto after:hover:left-0 after:hover:w-full"
             rel="noopener noreferrer"
           >
-            <span className="z-20  transition-all duration-[.4s] ease-in-out ">
+            <span className="z-20  transition-all duration-[.4s] ease-in-out group-hover:scale-110 group-hover:text-secundario ">
               See more
             </span>
           </a>

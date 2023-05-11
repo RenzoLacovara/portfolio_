@@ -45,7 +45,7 @@ export default function Tools<C extends React.ElementType>({
               reverse ? 'animate-orbitReverse' : 'animate-orbit'
             } animate-orbit`}
           >
-            <div className="tool w-16 h-16 small:w-20 small:h-20">
+            <div className="group w-16 h-16 small:w-20 small:h-20">
               <Image
                 alt={tool.titulo}
                 src={tool.imagen}
@@ -56,7 +56,7 @@ export default function Tools<C extends React.ElementType>({
                 33vw"
                 className="icon w-16 h-16 object-contain transition-all duration-300 ease small:w-20 small:h-20 hover:scale-125 hover:animate-shake"
               />
-              <p className="opacity-0 text-center transition-all duration-300 ease mt-5 text-base">
+              <p className="opacity-0 text-center transition-all duration-300 ease mt-5 text-base group-hover:opacity-100">
                 {tool.titulo}
               </p>
             </div>

@@ -99,39 +99,39 @@ export const otherData: base = [
 ]
 export const certificadosData: base = [
   {
-    imagen: '/../public/Images/certificados/javascriptAvanzadoI.webp',
+    imagen: '/Images/certificados/javascriptAvanzadoI.webp',
     titulo: 'Curso de JavaScript Avanzado',
   },
   {
-    imagen: '/../public/Images/certificados/frontendreact.webp',
+    imagen: '/Images/certificados/frontendreact.webp',
     titulo: 'Carrera en Desarrollo Frontend React',
   },
   {
-    imagen: '/../public/Images/certificados/javascriptProfesional.webp',
+    imagen: '/Images/certificados/javascriptProfesional.webp',
     titulo: 'Curso de JavaScript Profesional',
   },
   {
-    imagen: '/../public/Images/certificados/javascriptcoder.webp',
+    imagen: '/Images/certificados/javascriptcoder.webp',
     titulo: 'Curso de JavaScript CoderHouse',
   },
   {
-    imagen: '/../public/Images/certificados/reactAvanzado.webp',
+    imagen: '/Images/certificados/reactAvanzado.webp',
     titulo: 'Curso de React Avanzado',
   },
   {
-    imagen: '/../public/Images/certificados/reactcoder.webp',
+    imagen: '/Images/certificados/reactcoder.webp',
     titulo: 'Curso de React CoderHouse',
   },
   {
-    imagen: '/../public/Images/certificados/desWebAvanzado.webp',
+    imagen: '/Images/certificados/desWebAvanzado.webp',
     titulo: 'Curso de Desarrollo Web Avanzado',
   },
   {
-    imagen: '/../public/Images/certificados/desarrolloWebCoder.webp',
+    imagen: '/Images/certificados/desarrolloWebCoder.webp',
     titulo: 'Curso de Desarrollo Web CoderHouse',
   },
   {
-    imagen: '/../public/Images/certificados/desWebProfesional.webp',
+    imagen: '/Images/certificados/desWebProfesional.webp',
     titulo: 'Curso de Desarrollo Web Profesional',
   },
 ]

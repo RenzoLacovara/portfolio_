@@ -1,13 +1,13 @@
-import React from "react";
-import { useResponsive } from "../../hooks/useResponsive";
+import React from 'react'
+import { useResponsive } from '../../hooks/useResponsive'
 
 const Logo = () => {
-  const { responsive } = useResponsive();
+  const { responsive } = useResponsive()
   return (
     <div className="flex flex-col justify-center items-center gap-1 h-1/2">
       <div
         className={`logo ${
-          responsive ? "opacity-100 delay-500" : "opacity-0 duration-0 "
+          responsive ? 'opacity-100 delay-500' : 'opacity-0 duration-0 '
         } transition-all duration-300 ease-in-out `}
       >
         <svg
@@ -18,7 +18,7 @@ const Logo = () => {
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink"
           id="logo"
-          className="hover:animate-shake invert-[97%] w-20 md:w-[120px]"
+          className="group hover:animate-shake invert-[97%] w-20 md:w-[120px]"
         >
           <g id="logo">
             <rect width="159" height="155" fill="none" />
@@ -29,7 +29,7 @@ const Logo = () => {
               width="144"
               height="136"
               fill="url(#pattern0)"
-              className="ease-in"
+              className="ease-in-out group-hover:opacity-0"
             />
             <rect
               id="yo2"
@@ -38,7 +38,7 @@ const Logo = () => {
               width="144"
               height="136"
               fill="url(#pattern1)"
-              className="ease-in opacity-0"
+              className="ease-in-out opacity-0 group-hover:opacity-100"
             />
           </g>
           <defs>
@@ -84,25 +84,25 @@ const Logo = () => {
       <p
         className={`${
           responsive
-            ? "md:text-xs text-[.6rem] duration-200"
-            : "text-xl pb-20 duration-300"
+            ? 'md:text-xs text-[.6rem] duration-200'
+            : 'text-xl pb-20 duration-300'
         }  text-detalled transition-all ease-in-out`}
       >
         &#60;
         <span
-          className={`${responsive ? "inline-block" : "hidden"} text-principal`}
+          className={`${responsive ? 'inline-block' : 'hidden'} text-principal`}
         >
           Front-End Dev
         </span>
         <span
-          className={`text-principal ${responsive ? "text-xs" : "text-base"}`}
+          className={`text-principal ${responsive ? 'text-xs' : 'text-base'}`}
         >
           /
         </span>
         &#62;
       </p>
     </div>
-  );
-};
+  )
+}
 
-export default Logo;
+export default Logo

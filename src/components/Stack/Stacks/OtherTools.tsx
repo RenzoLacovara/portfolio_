@@ -36,7 +36,7 @@ export default function OtherTools<C extends React.ElementType>({
       </div>
       <div className="stack flex justify-center items-center flex-wrap">
         {tools.map((tool) => (
-          <div className="tool">
+          <div className="group">
             <Image
               alt={tool.titulo}
               src={tool.imagen}
@@ -47,7 +47,7 @@ export default function OtherTools<C extends React.ElementType>({
               33vw"
               className=" m-3 w-16 h-16 object-contain transition-all duration-300 ease small:w-20 small:h-20 hover:scale-125 hover:animate-shake"
             />
-            <p className="opacity-0 text-center transition-all duration-300 ease mt-5 text-base">
+            <p className="opacity-0 text-center transition-all duration-300 ease mt-5 text-base group-hover:opacity-100">
               {tool.titulo}
             </p>
           </div>

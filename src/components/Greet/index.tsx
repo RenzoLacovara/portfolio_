@@ -24,17 +24,17 @@ const Greet = () => {
   }, [])
 
   return (
-    <div className="overflow-hidden mt-6">
+    <div className="mt-6 overflow-hidden">
       <p
-        className="opacity-0 animate-fadeLeft font-caveat text-detalled md:ml-2 text-base"
+        className="text-base opacity-0 animate-fadeLeft font-caveat text-detalled md:ml-2"
         id="sobremi"
       >
         &#60;html&#62;
       </p>
-      <p className="opacity-0 animate-fadeLeft font-caveat text-detalled ml-1 md:ml-6 text-base">
+      <p className="ml-1 text-base opacity-0 animate-fadeLeft font-caveat text-detalled md:ml-6">
         &#60;body&#62;
       </p>
-      <section className="flex flex-col xl:flex-row justify-center items-center lg:gap-00 my-5 lg:my-16">
+      <section className="flex flex-col items-center justify-center my-5 xl:flex-row lg:gap-00 lg:my-16">
         <RevealWrapper
           origin="left"
           delay={1500}
@@ -45,7 +45,7 @@ const Greet = () => {
           mobile={false}
           className="pt-8 xl:w-2/5"
         >
-          <p className="inline-block font-caveat text-detalled absolute md:ml-10 text-base">
+          <p className="absolute inline-block text-base font-caveat text-detalled md:ml-10">
             &#60;h1&#62;
           </p>
           <h1 className="inline-block pl-8 text-[2.5rem] lg:text-7xl md:pl-[4.5rem]">
@@ -54,19 +54,19 @@ const Greet = () => {
               <br />
               I'm Renzo!
             </span>
-            <span className="font-caveat text-detalled pl-2 text-base">
+            <span className="pl-2 text-base font-caveat text-detalled">
               &#60;/h1&#62;
             </span>
           </h1>
           <br />
-          <p className="ml-2 inline-block font-caveat text-detalled text-base md:ml-12 ">
+          <p className="inline-block ml-2 text-base font-caveat text-detalled md:ml-12 ">
             &#60;p&#62;
           </p>
-          <h3 className="inline-block text-detalled mt-2 text-xl lg:text-4xl">
-            <span className="text-principal pl-2">I'm a </span>
+          <h3 className="inline-block mt-2 text-xl text-detalled lg:text-4xl">
+            <span className="pl-2 text-principal">I'm a </span>
             <span ref={el}></span>
           </h3>
-          <p className="inline-block font-caveat text-detalled text-base">
+          <p className="inline-block text-base font-caveat text-detalled">
             &#60;/p&#62;
           </p>
           <About />
@@ -90,8 +90,9 @@ const Greet = () => {
               sizes="(max-width: 768px) 100vw,
               (max-width: 1200px) 50vw,
               33vw"
+              priority={true}
             />
-            <div className="animate-opacity opacity-0">
+            <div className="opacity-0 animate-opacity">
               <div className="flex top-[-67px] right-16  p-2 m-5 items-center justify-center text-center text-secundario text-base animate-float rounded-[50%] absolute bg-white h-12 w-12 shadow-[65px_-15px_0_-2px_#fff,_25px_-25px_#fff,_30px_10px_#fff,_60px_15px_0_-10px_#fff,_85px_5px_0_-5px_#fff] xxl:right-[7.4rem] sm:top-[-7.3rem] "></div>
               <h3 className="absolute text-secundario  text-base  animate-float top-[-35px] right-5 sm:top-[-5.3rem] xxl:right-[4.4rem]  ">
                 I need coffee...

@@ -43,6 +43,7 @@ module.exports = {
         scroll: 'scroll 40s linear infinite',
         orbit: 'orbit linear 40s infinite',
         orbitReverse: 'orbit linear 40s infinite reverse',
+        zoom: 'zoom ease-in-out .3s',
       },
       colors: {
         principal: '#edf2f4',
@@ -51,6 +52,7 @@ module.exports = {
         secundariod: '#121212',
         detalled: '#e28868',
         detalle: '#d72638',
+        bgmodal: 'rgba(0, 0, 0, 0.9)',
       },
       fontFamily: {
         josefin: ['var(--font-josefin)'],
@@ -157,6 +159,14 @@ module.exports = {
           to: {
             transform:
               'rotateZ(calc((360deg / var(--circle-item-count)) * (var(--circle-item-index) + var(--circle-item-count)))) translateY(calc(var(--orbit-radius) * -1)) rotateZ(calc((360deg / var(--circle-item-count)) * (var(--circle-item-index) + var(--circle-item-count)) * -1))',
+          },
+        },
+        zoom: {
+          from: {
+            transform: 'scale(0.4)',
+          },
+          to: {
+            transform: 'scale(1)',
           },
         },
       },

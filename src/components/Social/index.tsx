@@ -12,7 +12,7 @@ export default function Social<C extends React.ElementType>({
 }: Props<C>) {
   return (
     <>
-      <li>
+      <li className="z-20">
         <a href="https://www.linkedin.com/in/renlacovara/" target="_blank">
           <FaLinkedinIn
             className={`text-secundario text-2xl bg-principal w-7 h-7 p-1 rounded-full overflow-visible hover:scale-110	hover:animate-shake ${
@@ -23,7 +23,7 @@ export default function Social<C extends React.ElementType>({
           />
         </a>
       </li>
-      <li>
+      <li className="z-20">
         <a href="https://github.com/RenzoLacovara" target="_blank">
           <FaGithub
             className={`text-secundario text-2xl bg-principal w-7 h-7 p-1 rounded-full overflow-visible hover:scale-110	hover:animate-shake ${
@@ -34,7 +34,7 @@ export default function Social<C extends React.ElementType>({
           />
         </a>
       </li>
-      <li>
+      <li className="z-20">
         <a href="mailto:rnlacovara@gmail.com" target="_blank">
           <FaEnvelope
             className={`text-secundario text-2xl bg-principal w-7 h-7 p-1 rounded-full overflow-visible hover:scale-110	hover:animate-shake ${

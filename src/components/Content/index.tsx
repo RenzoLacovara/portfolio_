@@ -10,7 +10,10 @@ const Content = () => {
   const Goup = dynamic(() => import('../Goup'))
 
   return (
-    <div className="row-span-3 col-start-2 col-end-3 text-3xl overflow-hidden w-full m-auto">
+    <div
+      id="content"
+      className="w-full col-start-2 col-end-3 row-span-3 m-auto overflow-hidden text-3xl"
+    >
       <Greet />
       <Projects />
       <Certification />

@@ -23,8 +23,8 @@ export default function Certificados<C extends React.ElementType>({
           isOpen ? 'pause' : 'null'
         }`}
       >
-        {certificadosArray.map((certificado) => (
-          <div className="mx-2 slide sm:w-80">
+        {certificadosArray.map((certificado, index) => (
+          <div key={index} className="mx-2 slide sm:w-80">
             <Image
               className={`imagen shadow-card w-60 object-cover transition-all duration-300 sm:w-full hover:scale-105 hover:opacity-70 cursor-zoom-in`}
               alt={certificado.titulo}

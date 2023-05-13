@@ -4,11 +4,11 @@ import { useResponsive } from '../../hooks/useResponsive'
 const Logo = () => {
   const { responsive } = useResponsive()
   return (
-    <div className="flex flex-col justify-center items-center gap-1 h-1/2">
+    <div className="z-20 flex flex-col items-center justify-center gap-1 h-1/2">
       <div
         className={`logo ${
           responsive ? 'opacity-100 delay-500' : 'opacity-0 duration-0 '
-        } transition-all duration-300 ease-in-out `}
+        } transition-all duration-300 ease-in-out  `}
       >
         <svg
           width="120"
@@ -18,7 +18,7 @@ const Logo = () => {
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink"
           id="logo"
-          className="group hover:animate-shake invert-[97%] w-20 md:w-[120px]"
+          className="group hover:animate-shake invert-[97%] w-20 md:w-[120px] "
         >
           <g id="logo">
             <rect width="159" height="155" fill="none" />

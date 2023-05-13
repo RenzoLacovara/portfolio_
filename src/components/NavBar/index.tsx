@@ -20,16 +20,16 @@ const Navbar = () => {
       } transition-all duration-500 ease-custom overflow-hidden`}
     >
       <button
-        className={`absolute top-2 left-[50%] translate-x-[-50%]  text-white text-xl z-20 ${
+        className={`absolute top-2 left-[50%] translate-x-[-50%]  text-white text-xl z-30 ${
           responsive ? 'rotate-180' : 'rotate-0'
         } transition-all duration-500 ease-custom`}
         onClick={handleClick}
       >
         <MdOutlineKeyboardDoubleArrowRight />
       </button>
-      <nav className="flex flex-col justify-evenly items-center h-full">
+      <nav className="flex flex-col items-center h-full justify-evenly">
         <Logo />
-        <div className="h-1/2">
+        <div className="z-20 h-1/2">
           <ul
             className={`flex flex-col items-center justify-center ${
               responsive ? 'gap-4' : 'gap-3'

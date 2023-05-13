@@ -1,17 +1,20 @@
-import React, { MutableRefObject, useRef } from 'react'
+import React, { useRef } from 'react'
 import ImageModal from './ImageModal'
 
 type Props = {
   handleClose: () => void
   src: string
 }
-type Ref = React.ForwardedRef<any>
 
-const Modal = React.forwardRef((props: Props, ref: Ref) => {
+const Modal = React.forwardRef((props: Props, ref: React.ForwardedRef<any>) => {
   const { handleClose, src } = props
   const modalImgRef = useRef(null)
   return (
-    <div ref={ref} className="modal" onClick={handleClose}>
+    <div
+      ref={ref}
+      className="fixed top-0 left-0 z-50 hidden w-full h-full pt-24 overflow-auto modal bg-bgmodal cursor-zoom-out"
+      onClick={handleClose}
+    >
       <ImageModal ref={modalImgRef} src={src} />
     </div>
   )

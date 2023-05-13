@@ -16,7 +16,10 @@ export default function ProjectItem({ proyectos }: ReadonlyComponent) {
   return (
     <div className="project w-[95%] m-auto flex flex-col gap-10 sm:gap-10 xl:gap-14 my-7">
       {proyectos.map((proyecto) => (
-        <div className="flex flex-col items-center justify-center lg:flex-row lg:even:flex-row-reverse projectdiv">
+        <div
+          key={proyecto.titulo}
+          className="flex flex-col items-center justify-center lg:flex-row lg:even:flex-row-reverse projectdiv"
+        >
           <RevealWrapper
             origin="left"
             delay={200}
@@ -25,7 +28,7 @@ export default function ProjectItem({ proyectos }: ReadonlyComponent) {
             distance="500px"
             reset={true}
             mobile={false}
-            className="imgcontainer w-full sm:w-[35rem] h-48 sm:h-80"
+            className="imgcontainer w-full sm:w-[35rem] h-48 sm:h-80 relative"
           >
             <Image
               fill
@@ -46,26 +49,22 @@ export default function ProjectItem({ proyectos }: ReadonlyComponent) {
             distance="500px"
             reset={false}
             mobile={false}
-            className="sm:h-60 sm:w-[25rem] bg-secundariod rounded-b-3xl sm:rounded-3xl text-center projecttext flex flex-col justify-between w-full sm:mt-[-5rem] lg:mt-0 lg:ml-[-5rem] shadow-card"
+            className="sm:h-60 sm:w-[25rem] bg-secundariod rounded-b-3xl sm:rounded-3xl text-center projecttext flex flex-col justify-between w-full sm:mt-[-5rem] lg:mt-0 lg:ml-[-5rem] shadow-card "
           >
-            <div className="flex flex-col items-center justify-center gap-2 px-6 pt-6">
-              <h3 className="text-xl border-b-[1px] border-principal px-4">
+            <div className="flex flex-col items-center justify-center gap-2 px-6 pt-6 ">
+              <h3 className="text-xl border-b-[1px] border-principal px-4 ">
                 {proyecto.titulo}
               </h3>
               <p className="text-xs small:text-base">{proyecto.descripcion}</p>
               <ul className="flex-wrap items-center justify-center hidden gap-2 sm:flex">
-                {proyecto.herramientas.map(
-                  (herramienta) => (
-                    console.log(herramienta),
-                    (
-                      <li
-                        className={`${herramienta} text-xs rounded-2xl px-3 pt-1`}
-                      >
-                        {herramienta}
-                      </li>
-                    )
-                  )
-                )}
+                {proyecto.herramientas.map((herramienta) => (
+                  <li
+                    key={herramienta}
+                    className={`${herramienta} text-xs rounded-2xl px-3 pt-1`}
+                  >
+                    {herramienta}
+                  </li>
+                ))}
               </ul>
             </div>
             <div className="flex items-center justify-center gap-4 p-6">

@@ -24,19 +24,19 @@ export default function OtherTools<C extends React.ElementType>({
       className="tools flex flex-col justify-center items-center w-[90%] mx-[5%]"
     >
       <div className="stack-title">
-        <h3>
-          <span className="inline-block font-caveat text-detalled text-base">
+        <h3 className="text-xl small:text-3xl">
+          <span className="inline-block text-base font-caveat text-detalled">
             &#60;h3&#62;
           </span>
           Other Tools
-          <span className="inline-block font-caveat text-detalled text-base">
+          <span className="inline-block text-base font-caveat text-detalled">
             &#60;/h3&#62;
           </span>
         </h3>
       </div>
-      <div className="stack flex justify-center items-center flex-wrap">
+      <div className="flex flex-wrap items-center justify-center stack">
         {tools.map((tool) => (
-          <div className="group">
+          <div key={tool.titulo} className="group">
             <Image
               alt={tool.titulo}
               src={tool.imagen}
@@ -45,9 +45,9 @@ export default function OtherTools<C extends React.ElementType>({
               sizes="(max-width: 768px) 100vw,
               (max-width: 1200px) 50vw,
               33vw"
-              className=" m-3 w-16 h-16 object-contain transition-all duration-300 ease small:w-20 small:h-20 hover:scale-125 hover:animate-shake"
+              className="object-contain w-16 h-16 m-3 transition-all duration-300 ease small:w-20 small:h-20 hover:scale-125 hover:animate-shake"
             />
-            <p className="opacity-0 text-center transition-all duration-300 ease mt-5 text-base group-hover:opacity-100">
+            <p className="mt-5 text-xs text-center transition-all duration-300 opacity-0 sm:text-base ease group-hover:opacity-100">
               {tool.titulo}
             </p>
           </div>

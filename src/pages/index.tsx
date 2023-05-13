@@ -3,6 +3,7 @@ import dynamic from 'next/dynamic'
 import { Josefin_Sans } from 'next/font/google'
 import { Caveat } from 'next/font/google'
 import Head from 'next/head'
+import Grainy from '../components/Grainy'
 
 const josefin = Josefin_Sans({
   subsets: ['latin'],
@@ -32,6 +33,7 @@ export default function Home() {
       <div
         className={`${josefin.variable} ${caveat.variable} font-josefin h-full w-full`}
       >
+        <Grainy />
         <Layout />
       </div>
     </>

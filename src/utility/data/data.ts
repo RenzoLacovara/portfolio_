@@ -77,7 +77,7 @@ export const otherData: base = [
     titulo: 'Git',
   },
   {
-    imagen: '/Images/typescript.webp',
+    imagen: '/Images/typeScript.webp',
     titulo: 'TypeScript',
   },
   {

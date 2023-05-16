@@ -82,7 +82,7 @@ const Greet = () => {
           mobile={false}
           className=" relative h-72 w-11/12 max-w-80 mt-5 rounded-t-0 rounded-b-[55px] overflow-hidden sm:mx-6 sm:h-[25rem] small:w-8/12 sm:w-[30rem] xl:w-1/3 sm:mt-0 "
         >
-          <div className="bg-clouds bg-cover h-48 w-full rounded-[55px] absolute top-24 animate-bgmove sm:h-64 sm:top-36">
+          <div className="clouds bg-cover h-48 w-full rounded-[55px] absolute top-24 animate-bgmove sm:h-64 sm:top-36">
             <Image
               className="pointer-events-none relative xl:animate-imagen origin-[50%_bottom] translate-y-0  top-[-1rem] w-48 left-1 sm:top-[-8.3rem] sm:w-72 sm:left-8  scale-125 "
               src={yo}

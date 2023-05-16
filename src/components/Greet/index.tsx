@@ -87,9 +87,6 @@ const Greet = () => {
               className="pointer-events-none relative xl:animate-imagen origin-[50%_bottom] translate-y-0  top-[-1rem] w-48 left-1 sm:top-[-8.3rem] sm:w-72 sm:left-8  scale-125 "
               src={yo}
               alt="Renzo Lacovara"
-              sizes="(max-width: 768px) 100vw,
-              (max-width: 1200px) 50vw,
-              33vw"
               priority={true}
             />
             <div className="opacity-0 animate-opacity">

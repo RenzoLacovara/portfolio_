@@ -29,11 +29,8 @@ export default function Certificados<C extends React.ElementType>({
               className={`imagen shadow-card w-60 object-cover transition-all duration-300 sm:w-full hover:scale-105 hover:opacity-70 cursor-zoom-in`}
               alt={certificado.titulo}
               src={certificado.imagen}
-              width={0}
-              height={0}
-              sizes="(max-width: 768px) 80vw,
-              (max-width: 1200px) 30vw,
-              13vw"
+              width={350}
+              height={350}
               id="image"
               onClick={zoomImg}
             />

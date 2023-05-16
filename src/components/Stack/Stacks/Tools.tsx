@@ -50,11 +50,8 @@ export default function Tools<C extends React.ElementType>({
               <Image
                 alt={tool.titulo}
                 src={tool.imagen}
-                width={500}
-                height={500}
-                sizes="(max-width: 768px) 100vw,
-                (max-width: 1200px) 50vw,
-                33vw"
+                width={100}
+                height={100}
                 className="object-contain w-16 h-16 transition-all duration-300 icon ease small:w-20 small:h-20 hover:scale-125 hover:animate-shake "
               />
               <p className="mt-5 text-xs text-center transition-all duration-300 opacity-0 sm:text-base ease group-hover:opacity-100">

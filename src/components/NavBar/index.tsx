@@ -50,6 +50,7 @@ const Navbar = () => {
                     responsive ? 'hidden' : 'inline-block'
                   } text-2xl`}
                   aria-label="about me section"
+                  name="about me section"
                 />
               </a>
             </li>
@@ -67,6 +68,7 @@ const Navbar = () => {
                     responsive ? 'hidden' : 'inline-block'
                   } text-2xl`}
                   aria-label="projects section"
+                  name="projects section"
                 />
               </a>
             </li>
@@ -83,7 +85,8 @@ const Navbar = () => {
                   className={`hover:text-detalled ${
                     responsive ? 'hidden' : 'inline-block'
                   } text-2xl`}
-                  aria-label="educationsection"
+                  aria-label="education section"
+                  name="education section"
                 />
               </a>
             </li>
@@ -101,6 +104,7 @@ const Navbar = () => {
                     responsive ? 'hidden' : 'inline-block'
                   } text-2xl`}
                   aria-label="stack section"
+                  name="stack section"
                 />
               </a>
             </li>
@@ -118,6 +122,7 @@ const Navbar = () => {
                     responsive ? 'hidden' : 'inline-block'
                   } text-2xl`}
                   aria-label="contact me section"
+                  name="contact me section"
                 />
               </a>
             </li>

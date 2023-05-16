@@ -62,10 +62,10 @@ const Greet = () => {
           <p className="inline-block ml-2 text-base font-caveat text-detalled md:ml-12 ">
             &#60;p&#62;
           </p>
-          <h3 className="inline-block mt-2 text-xl text-detalled lg:text-4xl">
+          <h2 className="inline-block mt-2 text-xl text-detalled lg:text-4xl">
             <span className="pl-2 text-principal">I'm a </span>
             <span ref={el}></span>
-          </h3>
+          </h2>
           <p className="inline-block text-base font-caveat text-detalled">
             &#60;/p&#62;
           </p>

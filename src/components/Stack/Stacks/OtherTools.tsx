@@ -24,7 +24,7 @@ export default function OtherTools<C extends React.ElementType>({
       className="tools flex flex-col justify-center items-center w-[90%] mx-[5%]"
     >
       <div className="stack-title">
-        <h3 className="text-xl small:text-3xl">
+        <h4 className="text-xl small:text-3xl">
           <span className="inline-block text-base font-caveat text-detalled">
             &#60;h3&#62;
           </span>
@@ -32,7 +32,7 @@ export default function OtherTools<C extends React.ElementType>({
           <span className="inline-block text-base font-caveat text-detalled">
             &#60;/h3&#62;
           </span>
-        </h3>
+        </h4>
       </div>
       <div className="flex flex-wrap items-center justify-center stack">
         {tools.map((tool) => (

@@ -20,6 +20,8 @@ export default function Social<C extends React.ElementType>({
                 ? 'hover:text-detalled'
                 : 'hover:text-principal hover:bg-detalled '
             } transition-all ease-in duration-200`}
+            aria-label="linkedin account"
+            name="linkedin account"
           />
         </a>
       </li>
@@ -31,6 +33,8 @@ export default function Social<C extends React.ElementType>({
                 ? 'hover:text-detalled'
                 : 'hover:text-principal hover:bg-detalled '
             } transition-all ease-in duration-200`}
+            aria-label="github account"
+            name="github account"
           />
         </a>
       </li>
@@ -42,6 +46,8 @@ export default function Social<C extends React.ElementType>({
                 ? 'hover:text-detalled'
                 : 'hover:text-principal hover:bg-detalled '
             } transition-all ease-in duration-200`}
+            aria-label="gmail account"
+            name="gmail account"
           />
         </a>
       </li>

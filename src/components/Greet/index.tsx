@@ -26,12 +26,12 @@ const Greet = () => {
   return (
     <div className="mt-6 overflow-hidden">
       <p
-        className="text-base opacity-0 animate-fadeLeft font-caveat text-detalled md:ml-2"
+        className="text-base sm:opacity-0 sm:animate-fadeLeft font-caveat text-detalled md:ml-2"
         id="sobremi"
       >
         &#60;html&#62;
       </p>
-      <p className="ml-1 text-base opacity-0 animate-fadeLeft font-caveat text-detalled md:ml-6">
+      <p className="ml-1 text-base sm:opacity-0 sm:animate-fadeLeft font-caveat text-detalled md:ml-6">
         &#60;body&#62;
       </p>
       <section className="flex flex-col items-center justify-center my-5 xl:flex-row lg:gap-00 lg:my-16">

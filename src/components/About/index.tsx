@@ -2,11 +2,11 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className="my-5 opacity-0 animate-fadeBottom">
-      <p className="block font-caveat text-detalled text-base md:ml-10">
+    <div className="my-5 sm:opacity-0 sm:animate-fadeBottom">
+      <p className="block text-base font-caveat text-detalled md:ml-10">
         &#60;p&#62;
       </p>
-      <p className="text-sm mx-3 text-center md:text-base md:mx-20 small:text-left">
+      <p className="mx-3 text-sm text-center md:text-base md:mx-20 small:text-left">
         I am a self-taught programmer, always curious and willing to learn,
         fueled by coffee and passion for coding, prioritizing accessibility,
         good practices, responsive design and a lot of love to every detail. I
@@ -14,11 +14,11 @@ const About = () => {
         Your page will be the first impression of your customers, let's make it
         a good one!
       </p>
-      <p className="block font-caveat text-detalled text-base md:ml-10">
+      <p className="block text-base font-caveat text-detalled md:ml-10">
         &#60;/p&#62;
       </p>
-      <div className="text-center small:text-left flex items-center justify-center small:justify-start">
-        <p className="inline-block font-caveat text-detalled text-base md:ml-10 ">
+      <div className="flex items-center justify-center text-center small:text-left small:justify-start">
+        <p className="inline-block text-base font-caveat text-detalled md:ml-10 ">
           &#60;a&#62;
         </p>
         <a
@@ -32,7 +32,7 @@ const About = () => {
             My Resume
           </span>
         </a>
-        <p className="inline-block font-caveat text-detalled text-base">
+        <p className="inline-block text-base font-caveat text-detalled">
           &#60;/a&#62;
         </p>
       </div>

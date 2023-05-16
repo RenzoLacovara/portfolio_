@@ -63,8 +63,8 @@ export const backendData: base = [
     titulo: 'Firebase',
   },
   {
-    imagen: '/Images/npm.webp',
-    titulo: 'Npm',
+    imagen: '/Images/yarn.webp',
+    titulo: 'Yarn',
   },
   {
     imagen: '/Images/nest.webp',

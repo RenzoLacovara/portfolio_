@@ -36,7 +36,7 @@ module.exports = {
           'fadeRight 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards ;',
         fadeLeftFast: 'fadeLeft 1s ease-in-out .5s forwards',
         fadeBottom:
-          'fadeBottom 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1.7s forwards',
+          'fadeBottom 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2.5s forwards',
         intro: 'intro 4.5s ease forwards',
         opacity: 'Opacity 1s ease-in-out forwards 4s',
         opacityFast: 'Opacity 1s ease-in-out forwards 1s',

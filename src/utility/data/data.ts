@@ -51,7 +51,7 @@ export const backendData: base = [
     titulo: 'Mongoose',
   },
   {
-    imagen: '/images/express.webp',
+    imagen: '/../../public/images/express.webp',
     titulo: 'Express',
   },
   {

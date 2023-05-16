@@ -191,7 +191,7 @@ module.exports = {
         clouds: 'url(/../public/images/Cloudy.svg)',
         dots: 'url(../public/images/dots.svg)',
         waves: 'url(/public/images/wave.svg)',
-        waveup: 'url(../../public/images/wave1.svg)',
+        waveup: 'url(/images/wave1.svg)',
         wavedown: 'url(../../public/images/wave2.svg)',
         peak: 'url(../../public/images/peak.svg)',
       },

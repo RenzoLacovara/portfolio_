@@ -13,87 +13,87 @@ export type proyecto = {
 
 export const frontendData: base = [
   {
-    imagen: '/../public/Images/html.webp',
+    imagen: '/../public/images/html.webp',
     titulo: 'Html5',
   },
   {
-    imagen: '/../public/Images/css.webp',
+    imagen: '/../public/images/css.webp',
     titulo: 'Css3',
   },
   {
-    imagen: '/../public/Images/sass.webp',
+    imagen: '/../public/images/sass.webp',
     titulo: 'Sass',
   },
   {
-    imagen: '/../public/Images/tailwind.webp',
+    imagen: '/../public/images/tailwind.webp',
     titulo: 'Tailwind.css',
   },
   {
-    imagen: '/../public/Images/javascript.webp',
+    imagen: '/../public/images/javascript.webp',
     titulo: 'JavaScript',
   },
   {
-    imagen: '/../public/Images/react.webp',
+    imagen: '/../public/images/react.webp',
     titulo: 'React.js',
   },
   {
-    imagen: '/../public/Images/next.webp',
+    imagen: '/../public/images/next.webp',
     titulo: 'Next.js',
   },
 ]
 export const backendData: base = [
   {
-    imagen: '/../public/Images/mondo.webp',
+    imagen: '/../public/images/mondo.webp',
     titulo: 'MongoDB',
   },
   {
-    imagen: '/../public/Images/mongoose.webp',
+    imagen: '/../public/images/mongoose.webp',
     titulo: 'Mongoose',
   },
   {
-    imagen: '/../public/Images/express.webp',
+    imagen: '/../public/images/express.webp',
     titulo: 'Express',
   },
   {
-    imagen: '/../public/Images/node.webp',
+    imagen: '/../public/images/node.webp',
     titulo: 'Node.js',
   },
   {
-    imagen: '/../public/Images/firebase.webp',
+    imagen: '/../public/images/firebase.webp',
     titulo: 'Firebase',
   },
   {
-    imagen: '/../public/Images/npm.webp',
+    imagen: '/../public/images/npm.webp',
     titulo: 'Npm',
   },
   {
-    imagen: '/../public/Images/nest.webp',
+    imagen: '/../public/images/nest.webp',
     titulo: 'Nest.js',
   },
 ]
 export const otherData: base = [
   {
-    imagen: '/../public/Images/git.webp',
+    imagen: '/../public/images/git.webp',
     titulo: 'Git',
   },
   {
-    imagen: '/../public/Images/typescript.webp',
+    imagen: '/../public/images/typescript.webp',
     titulo: 'TypeScript',
   },
   {
-    imagen: '/../public/Images/postman.webp',
+    imagen: '/../public/images/postman.webp',
     titulo: 'Postman',
   },
   {
-    imagen: '/../public/Images/jwt.webp',
+    imagen: '/../public/images/jwt.webp',
     titulo: 'JWT',
   },
   {
-    imagen: '/../public/Images/passport.webp',
+    imagen: '/../public/images/passport.webp',
     titulo: 'Passport',
   },
   {
-    imagen: '/../public/Images/figma.webp',
+    imagen: '/../public/images/figma.webp',
     titulo: 'Figma',
   },
 ]

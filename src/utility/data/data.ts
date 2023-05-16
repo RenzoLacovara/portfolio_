@@ -93,7 +93,7 @@ export const otherData: base = [
     titulo: 'Passport',
   },
   {
-    imagen: '/../public/images/figma.webp',
+    imagen: '/../../public/images/figma.webp',
     titulo: 'Figma',
   },
 ]

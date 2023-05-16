@@ -26,7 +26,7 @@ export default function ProjectItem({ proyectos }: ReadonlyComponent) {
             duration={1000}
             easing="ease-in-out"
             distance="500px"
-            reset={true}
+            reset={false}
             mobile={false}
             className="imgcontainer w-full sm:w-[35rem] h-48 sm:h-80 relative"
           >

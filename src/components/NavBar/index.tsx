@@ -39,7 +39,7 @@ const Navbar = () => {
               <a id="link1" href="#sobremi">
                 <span
                   className={`${
-                    responsive ? 'inline-block' : 'hidden'
+                    responsive ? '' : 'hidden'
                   } hover:text-detalled`}
                 >
                   ABOUT ME

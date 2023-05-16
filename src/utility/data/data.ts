@@ -13,45 +13,45 @@ export type proyecto = {
 
 export const frontendData: base = [
   {
-    imagen: '/images/html.webp',
+    imagen: '/Images/html.webp',
     titulo: 'Html5',
   },
   {
-    imagen: '/images/css.webp',
+    imagen: '/Images/css.webp',
     titulo: 'Css3',
   },
   {
-    imagen: '/images/sass.webp',
+    imagen: '/Images/sass.webp',
     titulo: 'Sass',
   },
   {
-    imagen: '/images/tailwind.webp',
+    imagen: '/Images/tailwind.webp',
     titulo: 'Tailwind.css',
   },
   {
-    imagen: '/images/javascript.webp',
+    imagen: '/Images/javascript.webp',
     titulo: 'JavaScript',
   },
   {
-    imagen: '/images/react.webp',
+    imagen: '/Images/react.webp',
     titulo: 'React.js',
   },
   {
-    imagen: '/images/next.webp',
+    imagen: '/Images/next.webp',
     titulo: 'Next.js',
   },
 ]
 export const backendData: base = [
   {
-    imagen: '/public/Images/mondo.webp',
+    imagen: '/Images/mondo.webp',
     titulo: 'MongoDB',
   },
   {
-    imagen: '/../public/Images/mongoose.webp',
+    imagen: '/Images/mongoose.webp',
     titulo: 'Mongoose',
   },
   {
-    imagen: '/../../public/Images/express.webp',
+    imagen: '/Images/express.webp',
     titulo: 'Express',
   },
   {
@@ -59,41 +59,41 @@ export const backendData: base = [
     titulo: 'Node.js',
   },
   {
-    imagen: '/images/firebase.webp',
+    imagen: '/Images/firebase.webp',
     titulo: 'Firebase',
   },
   {
-    imagen: '/images/npm.webp',
+    imagen: '/Images/npm.webp',
     titulo: 'Npm',
   },
   {
-    imagen: '/images/nest.webp',
+    imagen: '/Images/nest.webp',
     titulo: 'Nest.js',
   },
 ]
 export const otherData: base = [
   {
-    imagen: '/images/git.webp',
+    imagen: '/Images/git.webp',
     titulo: 'Git',
   },
   {
-    imagen: '/images/typescript.webp',
+    imagen: '/Images/typescript.webp',
     titulo: 'TypeScript',
   },
   {
-    imagen: '/images/postman.webp',
+    imagen: '/Images/postman.webp',
     titulo: 'Postman',
   },
   {
-    imagen: '/images/jwt.webp',
+    imagen: '/Images/jwt.webp',
     titulo: 'JWT',
   },
   {
-    imagen: '/images/passport.webp',
+    imagen: '/Images/passport.webp',
     titulo: 'Passport',
   },
   {
-    imagen: '/images/figma.webp',
+    imagen: '/Images/figma.webp',
     titulo: 'Figma',
   },
 ]

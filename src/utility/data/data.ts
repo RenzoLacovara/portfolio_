@@ -43,19 +43,19 @@ export const frontendData: base = [
 ]
 export const backendData: base = [
   {
-    imagen: '/public/images/mondo.webp',
+    imagen: '/public/Images/mondo.webp',
     titulo: 'MongoDB',
   },
   {
-    imagen: '/../public/images/mongoose.webp',
+    imagen: '/../public/Images/mongoose.webp',
     titulo: 'Mongoose',
   },
   {
-    imagen: '/../../public/images/express.webp',
+    imagen: '/../../public/Images/express.webp',
     titulo: 'Express',
   },
   {
-    imagen: '/images/node.webp',
+    imagen: '/Images/node.webp',
     titulo: 'Node.js',
   },
   {

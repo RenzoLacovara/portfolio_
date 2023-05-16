@@ -24,6 +24,7 @@ const Navbar = () => {
           responsive ? 'rotate-180' : 'rotate-0'
         } transition-all duration-500 ease-custom`}
         onClick={handleClick}
+        aria-label="expand bar"
       >
         <MdOutlineKeyboardDoubleArrowRight />
       </button>
@@ -48,6 +49,7 @@ const Navbar = () => {
                   className={`hover:text-detalled ${
                     responsive ? 'hidden' : 'inline-block'
                   } text-2xl`}
+                  aria-label="about me section"
                 />
               </a>
             </li>
@@ -64,6 +66,7 @@ const Navbar = () => {
                   className={`hover:text-detalled ${
                     responsive ? 'hidden' : 'inline-block'
                   } text-2xl`}
+                  aria-label="projects section"
                 />
               </a>
             </li>
@@ -80,6 +83,7 @@ const Navbar = () => {
                   className={`hover:text-detalled ${
                     responsive ? 'hidden' : 'inline-block'
                   } text-2xl`}
+                  aria-label="educationsection"
                 />
               </a>
             </li>
@@ -96,6 +100,7 @@ const Navbar = () => {
                   className={`hover:text-detalled ${
                     responsive ? 'hidden' : 'inline-block'
                   } text-2xl`}
+                  aria-label="stack section"
                 />
               </a>
             </li>
@@ -112,6 +117,7 @@ const Navbar = () => {
                   className={`hover:text-detalled ${
                     responsive ? 'hidden' : 'inline-block'
                   } text-2xl`}
+                  aria-label="contact me section"
                 />
               </a>
             </li>

@@ -23,6 +23,7 @@ const Goup = () => {
         className=" border-none flex items-center justify-center pl-[1px] fixed h-9 w-9 text-2xl bottom-4 right-9 text-center shadow-card z-50 bg-principal text-secundario rounded-full transition-all duration-300 ease-in-out hover:scale-110 hover:bg-detalled "
         onClick={scrollToTop}
         style={{ opacity: visible ? '1' : '0' }}
+        aria-label="go up button"
       >
         <AiOutlineArrowUp />
       </button>

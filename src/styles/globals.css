@@ -159,3 +159,6 @@ header::before,footer::before{
   filter: url(#grainy);
   -webkit-filter: url(#grainy);
 }
+.clouds {
+  background-image: url("../../public/Images/Cloudy.svg");
+}

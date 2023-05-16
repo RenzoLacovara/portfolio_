@@ -31,8 +31,7 @@ export default function ProjectItem({ proyectos }: ReadonlyComponent) {
             className="imgcontainer w-full sm:w-[35rem] h-48 sm:h-80 relative"
           >
             <Image
-              width={700}
-              height={425}
+              fill
               src={proyecto.imagen}
               alt={proyecto.titulo}
               className="projectimg small:w-[35rem] sm:h-80 rounded-t-2xl  sm:rounded-2xl object-cover h-full sm:w-full transition-all duration-200 ease-in-out cursor-zoom-in "

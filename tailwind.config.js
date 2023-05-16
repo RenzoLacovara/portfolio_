@@ -189,7 +189,7 @@ module.exports = {
       },
       backgroundImage: {
         clouds: 'url(/Images/Cloudy.svg)',
-        dots: 'url(//Images/dots.svg)',
+        dots: 'url(/Images/dots.svg)',
         waves: 'url(/Images/wave.svg)',
         waveup: 'url(/Images/wave1.svg)',
         wavedown: 'url(/Images/wave2.svg)',

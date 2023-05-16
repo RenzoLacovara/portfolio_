@@ -85,15 +85,15 @@ export const otherData: base = [
     titulo: 'Postman',
   },
   {
-    imagen: '/../public/images/jwt.webp',
+    imagen: 'images/jwt.webp',
     titulo: 'JWT',
   },
   {
-    imagen: '/../public/images/passport.webp',
+    imagen: 'images/passport.webp',
     titulo: 'Passport',
   },
   {
-    imagen: '/../../public/images/figma.webp',
+    imagen: '/images/figma.webp',
     titulo: 'Figma',
   },
 ]

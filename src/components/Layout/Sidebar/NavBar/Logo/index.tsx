@@ -1,5 +1,5 @@
 import React from 'react'
-import { useResponsive } from '../../../../hooks/useResponsive'
+import { useResponsive } from '../../../../../hooks/useResponsive'
 
 const Logo = () => {
   const { responsive } = useResponsive()

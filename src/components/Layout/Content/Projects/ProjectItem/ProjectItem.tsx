@@ -3,10 +3,10 @@ import { FaGithub } from 'react-icons/fa'
 import { TbWorld } from 'react-icons/tb'
 import { RevealWrapper } from 'next-reveal'
 import Image from 'next/image'
-import { proyecto } from '../../../utility/data/data'
-import { ReadonlyProps } from '../../../utility/types/type'
-import Modal from '../../Utils/Modal'
-import useModal from '../../../hooks/useModal'
+import { proyecto } from '../../../../../utility/data/data'
+import { ReadonlyProps } from '../../../../../utility/types/type'
+import Modal from '../../../../Utils/Modal'
+import useModal from '../../../../../hooks/useModal'
 interface Props {
   proyectos: proyecto
 }

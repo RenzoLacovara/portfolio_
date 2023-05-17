@@ -1,6 +1,6 @@
 import React from 'react'
 import Certificados from './Certificados/Certificados'
-import { certificadosData } from '../../utility/data/data'
+import { certificadosData } from '../../../../utility/data/data'
 
 export default function Certification() {
   return (

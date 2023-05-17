@@ -1,5 +1,5 @@
 import React from 'react'
-import Social from '../Utils/Social'
+import Social from '../../../Utils/Social'
 
 export default function Contact(contact) {
   return (
@@ -7,7 +7,7 @@ export default function Contact(contact) {
       className="container_contacto w-[80%] mx-[10%] md:w-full md:mx-0 my-8 md:my-14 flex justify-center items-center text-center"
       id="contacto"
     >
-      <div className="contacto_saludo p-5 rounded-2xl bg-peak bg-contain bg-repeat shadow-card flex flex-col gap-3">
+      <div className="flex flex-col gap-3 p-5 bg-repeat bg-contain contacto_saludo rounded-2xl bg-peak shadow-card">
         <p className="text-base">
           Interested in working with me? We can make an appointment to chat, I
           invite the coffee

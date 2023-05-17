@@ -1,7 +1,11 @@
 import React from 'react'
 import Tools from './Stacks/Tools'
 import OtherTools from './Stacks/OtherTools'
-import { backendData, frontendData, otherData } from '../../utility/data/data'
+import {
+  backendData,
+  frontendData,
+  otherData,
+} from '../../../../utility/data/data'
 
 export default function Stack() {
   return (

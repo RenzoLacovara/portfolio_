@@ -1,8 +1,8 @@
 import React from 'react'
 import Navbar from './NavBar'
 import Footer from './Footer'
-import { ResponsiveProvider } from '../../context/navbarContext'
-import { useResponsive } from '../../hooks/useResponsive'
+import { ResponsiveProvider } from '../../../context/navbarContext'
+import { useResponsive } from '../../../hooks/useResponsive'
 
 const SideBar = () => {
   const { responsive } = useResponsive()

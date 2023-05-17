@@ -28,6 +28,25 @@ export default function Home() {
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/Images/icon.webp" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://renzolacovara.vercel.app/" />
+        <meta property="og:title" content="" />
+        <meta
+          property="og:description"
+          content="If you are reading this: Hi! im Renzo, and this is my personal portfolio, hope you have a great day!"
+        />
+        <meta property="og:image" content="/Images/metacard.webp" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta
+          property="twitter:url"
+          content="https://renzolacovara.vercel.app/"
+        />
+        <meta property="twitter:title" content="" />
+        <meta
+          property="twitter:description"
+          content="If you are reading this: Hi! im Renzo, and this is my personal portfolio, hope you have a great day!"
+        />
+        <meta property="twitter:image" content="/Images/metacard.webp" />
       </Head>
 
       <div

@@ -1,10 +1,10 @@
-import Logo from '../Logo'
+import Logo from './Logo'
 import { BsStack, BsFillChatQuoteFill } from 'react-icons/bs'
 import { BsBriefcaseFill } from 'react-icons/bs'
 import { IoSchool } from 'react-icons/io5'
 import { MdOutlineKeyboardDoubleArrowRight } from 'react-icons/md'
 import { SiAboutdotme } from 'react-icons/si'
-import { useResponsive } from '../../hooks/useResponsive'
+import { useResponsive } from '../../../hooks/useResponsive'
 
 const Navbar = () => {
   const { responsive, setResponsive } = useResponsive()

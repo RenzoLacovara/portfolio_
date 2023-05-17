@@ -3,7 +3,7 @@ import dynamic from 'next/dynamic'
 import { Josefin_Sans } from 'next/font/google'
 import { Caveat } from 'next/font/google'
 import Head from 'next/head'
-import Grainy from '../components/Grainy'
+import Grainy from '../components/Utils/Texture/Grainy'
 
 const josefin = Josefin_Sans({
   subsets: ['latin'],

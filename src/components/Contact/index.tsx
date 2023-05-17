@@ -1,5 +1,5 @@
 import React from 'react'
-import Social from '../Social'
+import Social from '../Utils/Social'
 
 export default function Contact(contact) {
   return (

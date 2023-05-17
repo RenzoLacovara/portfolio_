@@ -44,6 +44,7 @@ module.exports = {
         orbit: 'orbit linear 40s infinite',
         orbitReverse: 'orbit linear 40s infinite reverse',
         zoom: 'zoom ease-in-out .3s',
+        scaleUp: 'scaleUp .3s ease-in-out',
       },
       colors: {
         principal: '#edf2f4',
@@ -166,6 +167,17 @@ module.exports = {
             transform: 'scale(0.4)',
           },
           to: {
+            transform: 'scale(1)',
+          },
+        },
+        scaleUp: {
+          '0%': {
+            transform: 'scale(1)',
+          },
+          '50%': {
+            transform: 'scale(0.95)',
+          },
+          '100%': {
             transform: 'scale(1)',
           },
         },

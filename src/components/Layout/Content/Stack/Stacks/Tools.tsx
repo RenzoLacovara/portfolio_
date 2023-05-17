@@ -34,7 +34,7 @@ export default function Tools<C extends React.ElementType>({
           </span>
           {name}
           <span className="inline-block text-base font-caveat text-detalled">
-            &#60;/h3&#62;
+            &#60;/h33&#62;
           </span>
         </h4>
       </div>

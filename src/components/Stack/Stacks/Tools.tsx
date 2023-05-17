@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import { RevealWrapper } from 'next-reveal'
-import { base } from '../../../../../utility/data/data'
+import { base } from '../../../utility/data/data'
 type Props<C extends React.ElementType> = {
   tools: base
   as?: C
@@ -34,7 +34,7 @@ export default function Tools<C extends React.ElementType>({
           </span>
           {name}
           <span className="inline-block text-base font-caveat text-detalled">
-            &#60;/h33&#62;
+            &#60;/h3&#62;
           </span>
         </h4>
       </div>

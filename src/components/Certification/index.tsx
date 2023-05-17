@@ -1,6 +1,6 @@
 import React from 'react'
 import Certificados from './Certificados/Certificados'
-import { certificadosData } from '../../../../utility/data/data'
+import { certificadosData } from '../../utility/data/data'
 
 export default function Certification() {
   return (
@@ -47,7 +47,7 @@ export default function Certification() {
             rel="noopener noreferrer"
             aria-label="See more certifications on my linkedin account"
           >
-            <span className="z-20 pt-1 transition-all duration-[.4s] ease-in-out group-hover:animate-scaleUp group-hover:text-secundario ">
+            <span className="z-20 pt-1 transition-all duration-[.4s] ease-in-out group-hover:scale-110 group-hover:text-secundario ">
               More certifications
             </span>
           </a>

@@ -1,6 +1,6 @@
 import React from 'react'
 import ProjectItem from './ProjectItem/ProjectItem'
-import { proyectosData } from '../../../../utility/data/data'
+import { proyectosData } from '../../utility/data/data'
 export default function Projects() {
   return (
     <div className="container_proyectos" id="proyectos">

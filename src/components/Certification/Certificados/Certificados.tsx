@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
-import { base } from '../../../../../utility/data/data'
-import Modal from '../../../../Utils/Modal'
-import useModal from '../../../../../hooks/useModal'
+import { base } from '../../../utility/data/data'
+import Modal from '../../Utils/Modal'
+import useModal from '../../../hooks/useModal'
 
 type Props<C extends React.ElementType> = {
   certificados: base

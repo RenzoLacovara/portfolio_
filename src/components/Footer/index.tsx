@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaLinkedinIn, FaGithub, FaEnvelope } from 'react-icons/fa'
-import { useResponsive } from '../../../../hooks/useResponsive'
-import Social from '../../../Utils/Social'
+import { useResponsive } from '../../hooks/useResponsive'
+import Social from '../Utils/Social'
 
 const Footer = () => {
   const { responsive } = useResponsive()

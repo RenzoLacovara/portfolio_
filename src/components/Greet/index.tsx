@@ -90,7 +90,7 @@ const Greet = () => {
               priority={true}
             />
             <div className="opacity-0 animate-opacity">
-              <div className="flex top-[-67px] right-16  p-2 m-5 items-center justify-center text-center text-secundario text-base animate-float rounded-[50%] absolute bg-white h-12 w-12 shadow-[65px_-15px_0_-2px_#fff,_25px_-25px_#fff,_30px_10px_#fff,_60px_15px_0_-10px_#fff,_85px_5px_0_-5px_#fff] xxl:right-[7.4rem] sm:top-[-7.3rem] "></div>
+              <div className="flex top-[-67px] right-16  p-2 m-5 items-center justify-center text-center text-secundario text-base animate-float rounded-[50%] absolute bg-white h-12 w-12 shadow-[65px_-15px_0_-2px_#fff,_25px_-25px_#fff,_30px_10px_#fff,_60px_15px_0_-10px_#fff,_85px_5px_0_-5px_#fff] after:shadow-[10px_22px_0_-6px_#fff,_-1px_35px_0_-10px_#fff] after:rounded-[50%] after:content-[''] after:block after:absolute after:z-[-1] after:bottom-[-10px] after:right-[6px] after:w-[30px] after:h-[30px] xxl:right-[7.4rem] sm:top-[-7.3rem] comics "></div>
               <h3 className="absolute text-secundario  text-base  animate-float top-[-35px] right-5 sm:top-[-5.3rem] xxl:right-[4.4rem]  ">
                 I need coffee...
               </h3>

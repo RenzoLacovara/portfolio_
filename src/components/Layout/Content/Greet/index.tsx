@@ -1,7 +1,7 @@
 import React from 'react'
 import { useEffect, useRef } from 'react'
 import Image from 'next/image'
-import yo from '../public/images/22.webp'
+import yo from '../../public/images/22.webp'
 import Typed from 'typed.js'
 import About from '../Greet/About'
 import { RevealWrapper } from 'next-reveal'

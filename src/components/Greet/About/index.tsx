@@ -28,7 +28,7 @@ const About = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <span className="z-20 transition-all duration-[.4s] ease-in-out group-hover:scale-110 group-hover:text-secundario">
+          <span className="z-20 transition-all duration-[.4s] ease-in-out group-hover:animate-scaleUp group-hover:text-secundario">
             My Resume
           </span>
         </a>

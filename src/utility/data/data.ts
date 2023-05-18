@@ -93,8 +93,8 @@ export const otherData: base = [
     titulo: 'Passport',
   },
   {
-    imagen: '/Images/figma.webp',
-    titulo: 'Figma',
+    imagen: '/Images/docker.webp',
+    titulo: 'Docker',
   },
 ]
 export const certificadosData: base = [

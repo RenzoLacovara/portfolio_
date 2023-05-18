@@ -200,7 +200,7 @@ module.exports = {
         custom: 'cubic-bezier(0.68, -0.55, 0.265, 1.55)',
       },
       backgroundImage: {
-        clouds: 'url(/Images/Cloudy.svg)',
+        clouds: 'url(/Images/Cloudy2.svg)',
         dots: 'url(/Images/dots.svg)',
         waves: 'url(/Images/wave.svg)',
         waveup: 'url(/Images/wave1.svg)',

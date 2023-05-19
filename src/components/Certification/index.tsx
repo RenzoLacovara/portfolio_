@@ -43,7 +43,7 @@ export default function Certification() {
           <a
             href="https://www.linkedin.com/in/renlacovara/details/certifications/"
             target="_blank"
-            className="group flex justify-center items-center w-40 sm:w-44 relative text-sm sm:text-base mx-3 py-2 px-4 rounded-[50px] bg-principal text-[#E54D26] overflow-hidden after:w-0 after:h-full after:content-[' '] after:bg-detalled after:transition-all after:duration-[.4s] after:ease-in-out after:right-0 after:absolute  after:hover:right-auto after:hover:left-0 after:hover:w-full"
+            className="group flex justify-center items-center w-40 sm:w-44 relative text-sm sm:text-base mx-3 py-2 px-4 rounded-[50px] bg-principal text-[#BB3716] overflow-hidden after:w-0 after:h-full after:content-[' '] after:bg-detalled after:transition-all after:duration-[.4s] after:ease-in-out after:right-0 after:absolute  after:hover:right-auto after:hover:left-0 after:hover:w-full"
             rel="noopener noreferrer"
             aria-label="See more certifications on my linkedin account"
           >

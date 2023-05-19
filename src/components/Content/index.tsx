@@ -3,11 +3,15 @@ import dynamic from 'next/dynamic'
 
 const Content = () => {
   const Greet = dynamic(() => import('../Greet'))
-  const Projects = dynamic(() => import('../Projects'))
-  const Certification = dynamic(() => import('../Certification'))
-  const Stack = dynamic(() => import('../Stack'))
-  const Contact = dynamic(() => import('../Contact'))
-  const Goup = dynamic(() => import('../Utils/Goup'))
+  const Projects = dynamic(() =>
+    import('../Projects').then((mod) => mod.default)
+  )
+  const Certification = dynamic(() =>
+    import('../Certification').then((mod) => mod.default)
+  )
+  const Stack = dynamic(() => import('../Stack').then((mod) => mod.default))
+  const Contact = dynamic(() => import('../Contact').then((mod) => mod.default))
+  const Goup = dynamic(() => import('../Utils/Goup').then((mod) => mod.default))
 
   return (
     <div

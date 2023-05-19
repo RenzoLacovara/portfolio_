@@ -13,7 +13,9 @@ const Navbar = () => {
   ) => {
     setResponsive(!responsive)
   }
-  const Logo = dynamic(() => import('./Logo').then((mod) => mod.default))
+  const Logo = dynamic(() => import('./Logo'), {
+    loading: () => <p>Loading...</p>,
+  })
   return (
     <header
       className={`fixed row-start-1 row-end-3 bg-secundariod h-2/3 ${

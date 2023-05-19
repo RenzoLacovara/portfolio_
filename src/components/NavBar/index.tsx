@@ -1,10 +1,10 @@
-import Logo from './Logo'
 import { BsStack, BsFillChatQuoteFill } from 'react-icons/bs'
 import { BsBriefcaseFill } from 'react-icons/bs'
 import { IoSchool } from 'react-icons/io5'
 import { MdOutlineKeyboardDoubleArrowRight } from 'react-icons/md'
 import { SiAboutdotme } from 'react-icons/si'
 import { useResponsive } from '../../hooks/useResponsive'
+import dynamic from 'next/dynamic'
 
 const Navbar = () => {
   const { responsive, setResponsive } = useResponsive()
@@ -13,6 +13,7 @@ const Navbar = () => {
   ) => {
     setResponsive(!responsive)
   }
+  const Logo = dynamic(() => import('./Logo').then((mod) => mod.default))
   return (
     <header
       className={`fixed row-start-1 row-end-3 bg-secundariod h-2/3 ${

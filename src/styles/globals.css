@@ -1,27 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@layer utilities {
-  .pause {
-    animation-play-state: paused;
-  }
-}
-:root{
-  --principal: #edf2f4,
-  --principald: #dfe0e0,
-  --secundario:#212121,
-  --secundariod: #121212,
-  --detalled: #e28868,
-  --detalle: #d72638,
+
+:root {
   --orbit-radius: 160px;
   --circle-item-count: 7;
   --circle-item-index: 0;
 }
-@media screen and (max-width: 424px) {
-  :root{
-    --orbit-radius: 130px;
+@media screen and (max-width: 465px) {
+  :root {
+    --orbit-radius: 110px;
   }
 }
+
 p::selection,
 i::selection,
 span::selection,
@@ -32,7 +23,10 @@ h4::selection,
 a::selection {
   text-shadow: none;
   background-color: #e28868;
-  color: #121212
+  color: #121212;
+}
+.pause {
+  animation-play-state: paused;
 }
 
 /* background: rgb(255,154,162);
@@ -63,15 +57,14 @@ background: linear-gradient(90deg, rgba(255,154,162,1) 0%, rgba(255,183,178,1) 2
 }
 
 @media screen and (min-width: 640px) {
-
-  .project>.projectdiv:nth-child(even) .projectimg:hover {
+  .project > .projectdiv:nth-child(even) .projectimg:hover {
     transform: rotate(-2deg);
     -webkit-transform: rotate(-2deg);
     -moz-transform: rotate(-2deg);
     -ms-transform: rotate(-2deg);
     -o-transform: rotate(-2deg);
   }
-  .project>.projectdiv:nth-child(odd) .projectimg:hover {
+  .project > .projectdiv:nth-child(odd) .projectimg:hover {
     transform: rotate(2deg);
     -webkit-transform: rotate(2deg);
     -moz-transform: rotate(2deg);
@@ -90,24 +83,18 @@ background: linear-gradient(90deg, rgba(255,154,162,1) 0%, rgba(255,183,178,1) 2
   opacity: 0.5;
 }
 
-
 .u-grid-center * {
   grid-area: 1 / 1 / 2 / 2;
 }
-:root{
-  --orbit-radius: 160px;
-  --circle-item-count: 7;
-  --circle-item-index: 0;
-}
-@media screen and (max-width: 465px) {
-  :root{
-    --orbit-radius: 110px;
-  }
-}
 
 .circle-item {
-  transform: rotateZ(    calc((360deg / var(--circle-item-count)) * var(--circle-item-index))  )  translateY(calc(var(--orbit-radius) * -1))  rotateZ(    calc((360deg / var(--circle-item-count)) * var(--circle-item-index) * -1)  );
-
+  transform: rotateZ(
+      calc((360deg / var(--circle-item-count)) * var(--circle-item-index))
+    )
+    translateY(calc(var(--orbit-radius) * -1))
+    rotateZ(
+      calc((360deg / var(--circle-item-count)) * var(--circle-item-index) * -1)
+    );
 }
 .circle-item:nth-child(1) {
   --circle-item-index: 0;
@@ -145,7 +132,8 @@ background: linear-gradient(90deg, rgba(255,154,162,1) 0%, rgba(255,183,178,1) 2
   opacity: 0.5;
 }
 
-header::before, footer::before {
+header::before,
+footer::before {
   position: absolute;
   left: 0;
   top: 0;
@@ -154,10 +142,9 @@ header::before, footer::before {
   height: 100%;
   z-index: 1;
 }
-header::before,footer::before{
+header::before,
+footer::before {
   background: #000;
   filter: url(#grainy);
   -webkit-filter: url(#grainy);
 }
-
-

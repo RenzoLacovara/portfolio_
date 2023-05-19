@@ -1,7 +1,7 @@
 import dynamic from 'next/dynamic'
+import Content from '../Content'
 export default function Layout() {
-  const SideBar = dynamic(() => import('../Sidebar'))
-  const Content = dynamic(() => import('../Content'))
+  const SideBar = dynamic(() => import('../Sidebar').then((mod) => mod.default))
 
   return (
     <main

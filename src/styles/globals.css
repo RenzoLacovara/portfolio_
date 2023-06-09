@@ -50,6 +50,18 @@ background: linear-gradient(90deg, rgba(255,154,162,1) 0%, rgba(255,183,178,1) 2
 .TAILWIND {
   background-color: #1bb5b9;
 }
+.NODE {
+  background-color: #65b44b;
+}
+.EXPRESS {
+  background-color: #848285;
+}
+.NEXT {
+  background-color: #3d3d3d;
+}
+.MONGODB {
+  background-color: #4dae3f;
+}
 @media screen and (min-width: 1280px) {
   .project .projectdiv:nth-child(even) .projecttext {
     margin-right: -5rem;

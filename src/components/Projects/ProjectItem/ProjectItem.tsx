@@ -46,14 +46,18 @@ export default function ProjectItem({ proyectos }: ReadonlyComponent) {
             distance="500px"
             reset={false}
             mobile={false}
-            className="sm:h-60 sm:w-[25rem] bg-secundariod rounded-b-3xl sm:rounded-3xl text-center projecttext flex flex-col justify-between w-full sm:mt-[-5rem] lg:mt-0 lg:ml-[-5rem] shadow-card "
+            className="sm:h-64 sm:w-[25rem] bg-secundariod rounded-b-3xl sm:rounded-3xl text-center projecttext flex flex-col justify-between w-full sm:mt-[-5rem] lg:mt-0 lg:ml-[-5rem] shadow-card "
           >
             <div className="flex flex-col items-center justify-center gap-2 px-6 pt-6 ">
               <h3 className="text-xl border-b-[1px] border-principal px-4 ">
                 {proyecto.titulo}
               </h3>
               <p className="text-xs small:text-base">{proyecto.descripcion}</p>
-              <ul className="flex-wrap items-center justify-center hidden gap-2 sm:flex">
+              <p className="text-xs small:text-base">
+                <span className="font-bold">Role: </span>
+                <span className="italic">{proyecto.role}</span>
+              </p>
+              <ul className="flex flex-wrap items-center justify-center gap-2">
                 {proyecto.herramientas.map((herramienta) => (
                   <li
                     key={herramienta}

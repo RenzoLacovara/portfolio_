@@ -7,6 +7,7 @@ export type proyecto = {
   titulo: string
   descripcion: string
   herramientas: string[]
+  role: string
   link: string
   github: string
 }[]
@@ -142,6 +143,7 @@ export const proyectosData: proyecto = [
     descripcion:
       'Website for gastronomic entrepreneurship with dark mode and responsive design',
     herramientas: ['SASS', 'BOOTSTRAP', 'JAVASCRIPT'],
+    role: 'Front-End',
     link: 'https://oishiiramen.vercel.app/',
     github: 'https://github.com/RenzoLacovara/OishiiRamen',
   },
@@ -151,8 +153,19 @@ export const proyectosData: proyecto = [
     descripcion:
       'Small e-commerce project simulating a store in the Harry Potter universe',
     herramientas: ['TAILWIND', 'JAVASCRIPT', 'REACT', 'FIREBASE'],
+    role: 'Full-Stack',
     link: 'https://hogsmazon.vercel.app/',
     github: 'https://github.com/RenzoLacovara/Hogsmazon_',
+  },
+  {
+    imagen: '/Images/donare.webp',
+    titulo: 'Donare',
+    descripcion:
+      'App designed to reuse and recycle objects through donation to give them new life and reduce waste',
+    herramientas: ['NODE', 'EXPRESS', 'NEXT', 'MONGODB'],
+    role: 'Back-End',
+    link: 'https://s8-20-m-react.vercel.app/',
+    github: 'https://github.com/No-Country/s8-20-m-react',
   },
   {
     imagen: '/Images/prosaludmedical.webp',
@@ -160,6 +173,7 @@ export const proyectosData: proyecto = [
     descripcion:
       'Website for the health company Pro Salud Medical, team developed to show its services and memberships',
     herramientas: ['SASS', 'BOOTSTRAP', 'JAVASCRIPT', 'REACT'],
+    role: 'Front-End',
     link: 'https://pro-salud-medical.vercel.app/',
     github: 'https://github.com/MrFontina/ProSaludMedical',
   },

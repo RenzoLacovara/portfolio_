@@ -92,7 +92,7 @@ const Logo = () => {
         <span
           className={`${responsive ? 'inline-block' : 'hidden'} text-principal`}
         >
-          Front-End Dev
+          Full Stack Dev
         </span>
         <span
           className={`text-principal ${responsive ? 'text-xs' : 'text-base'}`}

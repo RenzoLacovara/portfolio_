@@ -44,7 +44,7 @@ export default function Tools<C extends React.ElementType>({
             key={tool.titulo}
             className={`circle-item text-center ${
               reverse ? 'animate-orbitReverse' : 'animate-orbit'
-            } animate-orbit group`}
+            } group`}
           >
             <div className="w-16 h-16 small:w-20 small:h-20">
               <Image

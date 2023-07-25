@@ -5,8 +5,11 @@ import { certificadosData } from '../../utility/data/data'
 export default function Certification() {
   return (
     <div>
-      <div className="w-full h-40 bg-no-repeat bg-cover bg-waveup"></div>
-      <div className="pt-10 bg-no-repeat bg-cover bg-waves" id="certificados">
+      <div className="w-full bg-no-repeat bg-cover h-52 bg-waveup"></div>
+      <div
+        className="w-full py-10 bg-[length:100%_100%] bg-waves"
+        id="certificados"
+      >
         <p className="inline-block text-base font-caveat text-secundariod md:ml-10">
           &#60;h2&#62;
         </p>
@@ -56,7 +59,7 @@ export default function Certification() {
           </p>
         </div>
       </div>
-      <div className="w-full h-40 bg-no-repeat bg-cover bg-wavedown"></div>
+      <div className="w-full bg-no-repeat bg-cover h-52 bg-wavedown mt-[-1px]"></div>
     </div>
   )
 }

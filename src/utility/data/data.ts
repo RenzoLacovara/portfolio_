@@ -48,8 +48,8 @@ export const backendData: base = [
     titulo: 'MongoDB',
   },
   {
-    imagen: '/Images/mongoose.webp',
-    titulo: 'Mongoose',
+    imagen: '/Images/mysql.webp',
+    titulo: 'MySql',
   },
   {
     imagen: '/Images/express.webp',

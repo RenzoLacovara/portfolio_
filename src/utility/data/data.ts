@@ -48,7 +48,7 @@ export const backendData: base = [
     titulo: 'MongoDB',
   },
   {
-    imagen: '/Images/mysql.webp',
+    imagen: '/Images/MySql.webp',
     titulo: 'MySql',
   },
   {
